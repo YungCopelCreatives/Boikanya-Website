@@ -1,0 +1,156 @@
+/* Boikanya brand overrides: colors, typography, and calm UI */
+
+:root {
+  --bs-primary: #5dbb88; /* soft green brand */
+  --bs-secondary: #e0f2e9; /* light green accent */
+  --bs-light: #f4f7f5; /* base background */
+  --bs-white: #ffffff; /* true white for overlays */
+  --bs-dark: #2e3b32; /* supportive dark */
+}
+
+body {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar brand logo sizing */
+.navbar-brand img {
+  height: 64px;
+  width: auto;
+}
+
+/* Center main navigation items */
+.navbar .navbar-nav { margin-left: auto; margin-right: auto; }
+
+/* Remove gradient overlays; keep imagery minimal */
+.bg-breadcrumb {
+  background: url(../img/carousel-2.jpg) center center / cover no-repeat;
+}
+.bg-breadcrumb .breadcrumb-item a,
+.bg-breadcrumb h1,
+.bg-breadcrumb h3,
+.bg-breadcrumb .breadcrumb-item.active,
+.bg-breadcrumb .text-white { color: var(--bs-white) !important; }
+
+.appointment {
+  background: url(../img/carousel-2.jpg) center center / cover no-repeat fixed;
+}
+.appointment .appointment-form {
+  background: rgba(232, 230, 211, 0.5);
+  backdrop-filter: blur(6px);
+}
+.appointment h1,
+.appointment h2,
+.appointment h3,
+.appointment h4,
+.appointment h5,
+.appointment p,
+.appointment .text-white { color: var(--bs-white) !important; }
+
+/* Inside the appointment form, use dark text for contrast on light card */
+.appointment .appointment-form h1,
+.appointment .appointment-form h2,
+.appointment .appointment-form h3,
+.appointment .appointment-form h4,
+.appointment .appointment-form h5,
+.appointment .appointment-form p,
+.appointment .appointment-form label { color: var(--bs-dark) !important; }
+
+.testimonial {
+  background: url(../img/carousel-1.jpg) center center / cover no-repeat fixed;
+}
+.testimonial .testimonial-item .testimonial-inner {
+  background: rgba(232, 230, 211, 0.5);
+  backdrop-filter: blur(6px);
+}
+.testimonial h1,
+.testimonial h3,
+.testimonial h4,
+.testimonial p,
+.testimonial .text-white { color: var(--bs-white) !important; }
+.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial .testimonial-carousel .owl-nav .owl-next:hover {
+  box-shadow: inset 100px 0 0 0 var(--bs-secondary) !important;
+  color: var(--bs-primary) !important;
+}
+.testimonial-carousel .owl-dots .owl-dot span::after { background: var(--bs-primary); }
+
+/* Footer: solid, calm background and links */
+.footer { background: var(--bs-dark) !important; }
+.footer .footer-item a { color: rgba(255,255,255,0.7); }
+.footer .footer-item a:hover { color: var(--bs-secondary); letter-spacing: 0; }
+.footer .footer-item p { color: rgba(255,255,255,0.7); }
+
+/* Hero caption: white text over imagery, no glow effects */
+.header-carousel .header-carousel-item .carousel-caption { background: none; }
+.header-carousel .carousel-caption .carousel-caption-content h1,
+.header-carousel .carousel-caption .carousel-caption-content p { color: var(--bs-white) !important; }
+
+/* Primary text, borders, and backgrounds align to brand green */
+.text-primary { color: var(--bs-primary) !important; }
+.border-primary { border-color: var(--bs-primary) !important; }
+.bg-primary { background-color: var(--bs-primary) !important; }
+
+/* Primary buttons use soft green and soften hover */
+.btn.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: var(--bs-white);
+}
+.btn.btn-primary:hover {
+  background-color: #4ca876;
+  border-color: #4ca876;
+  color: var(--bs-white) !important;
+}
+
+/* Contact page: improve form styling on dark background */
+.contact .form-control,
+.contact .form-select {
+  background-color: transparent;
+  color: var(--bs-white);
+  border-color: var(--bs-white);
+}
+.contact .form-control::placeholder,
+.contact .form-select::placeholder { color: rgba(255,255,255,0.7); }
+.contact .form-control:focus,
+.contact .form-select:focus {
+  border-color: var(--bs-secondary);
+  box-shadow: none;
+}
+/* Make select arrow visible on dark backgrounds */
+.contact .form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M2 4l6 6 6-6' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
+  padding-right: 2rem;
+}
+
+/* Contact: remove blue overlay and align with brand visuals */
+.contact {
+  /* Updated per request to use carousel-1.jpg */
+  background: url(../img/carousel-1.jpg) center center / cover no-repeat fixed;
+}
+.contact .contact-form {
+  background: rgba(232, 230, 211, 0.5);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+}
+
+/* Services: replace blue hover overlays with olive tone and center content */
+.service .service-item:hover .service-img::before {
+  background: rgba(94, 107, 78, 0.3) !important;
+}
+.service .service-item .service-content::before {
+  background: rgba(94, 107, 78, 0.5) !important;
+}
+.service .service-item:hover .service-content::before {
+  background: rgba(94, 107, 78, 0.5) !important;
+}
+.service .service-item .service-content .service-content-inner {
+  text-align: center;
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+        <title>Boikanya | Book Appointment</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="biokinetics appointments, book biokineticist, movement rehabilitation, Centurion, Gauteng" name="keywords">
+    <meta content="Book your appointment with Boikanya Biokinetics in Centurion. Evidence-based movement rehabilitation and wellness programmes." name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/brand.css" rel="stylesheet">
+        
+        <style>
+            :root {
+                --primary: #155f82; /* Deep Blue */
+                --secondary: #8fd973; /* Green */
+                --light: #F8F9FA;
+                --dark: #212529;
+            }
+            
+            body {
+                font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+            }
+            
+            /* Style for Bookem widget container */
+            .bookem-container {
+                min-height: 600px;
+                width: 100%;
+            }
+            
+            bookem-widget {
+                display: block;
+                width: 100%;
+                min-height: 600px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, Centurion</a>
+                        <a href="tel:+27671728818" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818</a>
+                        <a href="mailto:admin@boikanya.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-0 text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 sticky-top">
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/Logo.png" alt="Boikanya Biokinetics Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0 ms-3 active">Book Appointment</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h1 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Book Your Appointment</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-primary">Appointment</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Book Appointment Start -->
+        <div class="container-fluid appointment py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-12 mb-5 wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="section-title text-center">
+                            <h4 class="sub-title pe-3 mb-0">Available Appointment Slots</h4>
+                            <h2 class="display-5 mb-4">Select a Date to View Available Times</h2>
+                            <p class="mb-4">View our calendar below to find an available appointment slot. Once you've found a suitable time, please complete the form below to book your appointment.</p>
+                        </div>
+                        <div class="calendar-container rounded shadow p-3 mb-5 bg-white bookem-container">
+                            <!-- Bookem Widget -->
+                            <script src="https://embed.bookem.com/embed.js"></script>
+                            <bookem-widget business-id="b6e8eb2405854e2cb6191185a17e1c75"></bookem-widget>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="section-title text-start">
+                            <h4 class="sub-title pe-3 mb-0">Clinic Consultation</h4>
+                            <h2 class="display-6 mb-4">Book Your In-Clinic Appointment</h2>
+                            <p class="mb-4">Visit our clinic at Eco-Park Virgin Active, 270 Witch-Hazel Avenue, Centurion for expert biokinetics care. Our clinic is equipped with state-of-the-art facilities to provide you with the best treatment.</p>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-money-bill text-primary"></i>
+                                </div>
+                                
+                            </div>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-light" style="width: 50px; height: 50px;">
+                                    <i class="fa fa-clock text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Business Hours</h5>
+                                    <p class="mb-0">Mon–Thu 08:00–16:30 | Fri 08:00–15:00</p>
+                                    <p class="mb-0">Weekends closed unless prior appointment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="appointment-form rounded p-5">
+                            <h2 class="display-6 mb-4">Appointment Request Form</h2>
+                            <form id="appointmentForm">
+                                <div class="row gy-3 gx-4">
+                                    <div class="col-xl-12">
+                                        <input type="text" id="fullName" name="fullName" class="form-control py-3 border-primary bg-transparent" placeholder="Full Name" aria-label="Full Name" required aria-required="true">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="email" id="email" name="email" class="form-control py-3 border-primary bg-transparent" placeholder="Email Address" aria-label="Email Address" required aria-required="true">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="tel" id="phone" name="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone Number" aria-label="Phone Number" required aria-required="true">
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <select id="serviceType" name="serviceType" class="form-select py-3 border-primary bg-transparent" aria-label="Service Type" required>
+                                            <option value="" selected disabled>Service Type</option>
+                                            <option value="clinic">Clinic Visit</option>
+                                            <option value="home">Home Visit</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-12">
+                                            <select id="hvCondition" name="condition" class="form-select py-3 border-primary bg-transparent" aria-label="Service" required>
+                                                <option value="" selected disabled>Select a Service</option>
+                                                <option value="orthopaedic_rehabilitation">Orthopaedic Rehabilitation</option>
+                                                <option value="neurological_rehabilitation">Neurological Rehabilitation</option>
+                                                <option value="pre_post_natal_care">Pre & Post Natal Care</option>
+                                                <option value="chronic_condition_management">Management of Chronic Conditions</option>
+                                                <option value="fitness_assessment">Fitness Assessment</option>
+                                                <option value="body_composition">Body Composition</option>
+                                                <option value="corporate_wellness">Corporate Wellness</option>
+                                                <option value="group_classes">Group Classes</option>
+                                                <option value="sports_massage">Sports Massage</option>
+                                            </select>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <input type="date" id="appointmentDate" name="appointmentDate" class="form-control py-3 border-primary bg-transparent" aria-label="Appointment Date" required aria-required="true">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea id="hvDesc" class="form-control border-primary bg-transparent" name="description" cols="30" rows="4" placeholder="Please describe your condition or any specific requirements"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="consentCheck" name="consent" required>
+                                            <label class="form-check-label" for="consentCheck">
+                                                I consent to Boikanya Biokinetics collecting and storing my personal information for appointment purposes.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT REQUEST</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        // Condition dropdown behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            const cond = document.getElementById('hvCondition');
+            const desc = document.getElementById('hvDesc');
+            
+            if (cond && desc) {
+                cond.addEventListener('change', () => {
+                    if(cond.value === 'other') {
+                        desc.focus();
+                        desc.setAttribute('aria-required', 'true');
+                        desc.setAttribute('required', 'required');
+                    } else {
+                        desc.removeAttribute('aria-required');
+                        desc.removeAttribute('required');
+                    }
+                });
+            }
+        });
+        </script>
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Book Appointment End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                <img src="img/Logo.png" alt="Boikanya Biokinetics Logo" class="mb-4" style="max-height: 64px; width: auto;">
+                            <p>Female-owned biokinetics practice providing movement assessment and rehabilitation services within HPCSA professional standards.</p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.instagram.com/thegratefulbio?utm_source=qr&igsh=MWxrOG0wN3dhaGFzNA==" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href="https://www.linkedin.com/in/duduetsangkeokame?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href="service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+                            <a href="testimonial.html"><i class="fas fa-angle-right me-2"></i> Testimonial</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Additional Information</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Resources</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Boikanya Services</h4>
+                            <a href="services/orthopaedic-rehabilitation.html"><i class="fas fa-angle-right me-2"></i> Orthopaedic Rehabilitation</a>
+                            <a href="services/neurological-rehabilitation.html"><i class="fas fa-angle-right me-2"></i> Neurological Rehabilitation</a>
+                            <a href="services/pre-post-natal-care.html"><i class="fas fa-angle-right me-2"></i> Pre & Post Natal Care</a>
+                            <a href="services/management-of-chronic-conditions.html"><i class="fas fa-angle-right me-2"></i> Chronic Condition Management</a>
+                            <a href="services/fitness-assessment.html"><i class="fas fa-angle-right me-2"></i> Fitness Assessment</a>
+                            <a href="services/body-composition.html"><i class="fas fa-angle-right me-2"></i> Body Composition</a>
+                            <a href="services/corporate-wellness.html"><i class="fas fa-angle-right me-2"></i> Corporate Wellness</a>
+                            <a href="services/group-classes.html"><i class="fas fa-angle-right me-2"></i> Group Classes</a>
+                            <a href="services/sports-massage.html"><i class="fas fa-angle-right me-2"></i> Sports Massage</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Contact Info</h4>
+                            <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener"><i class="fa fa-map-marker-alt me-2"></i> Eco-Park Virgin Active, Centurion</a>
+                            <a href="mailto:admin@boikanya.com"><i class="fas fa-envelope me-2"></i> admin@boikanya.com</a>
+                            <a href="tel:+27671728818"><i class="fas fa-phone me-2"></i> (+27) 067 172 8818</a>
+                            <a href="https://www.boikanya.com" target="_blank" rel="noopener"><i class="fas fa-globe me-2"></i> www.boikanya.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-12 text-center">
+                        <span class="text-white">© 2025 Boikanya Biokinetics Practice</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/scripts.js"></script>
+        
+    </body>
+
+</html>
