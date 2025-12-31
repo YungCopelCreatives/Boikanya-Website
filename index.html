@@ -60,7 +60,8 @@
         <link href="css/brand.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body role="document" aria-label="Boikanya Biokinetics Home">
+    <main role="main" aria-label="Main content">
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -78,7 +79,7 @@
                     <div class="d-flex flex-wrap">
                         <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, Centurion</a>
                         <a href="tel:+27671728818" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818</a>
-                        <a href="mailto:dkbiokineticist@gmail.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com</a>
+                        <a href="mailto:admin@boikanya.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -95,110 +96,26 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
-                    <img src="img/Logo.png" alt="Boikanya Biokinetics Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-3 ms-lg-3">Book Appointment</a>
-                </div>
-            </nav>
-
-
-            <!-- Carousel Start -->
-            <div class="header-carousel owl-carousel">
-                <div class="header-carousel-item">
-                    <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="carousel-caption-content p-3">
-                            <h1 class="display-4 mb-4">Move With Purpose</h1>
-                            <p class="mb-5 fs-5">Biokinetics services focused on movement assessment, rehabilitation, and physical activity guidance for individuals across different stages of life.</p>
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-4 me-2" href="contact.html">Request an Appointment</a>
-                            <a class="btn btn-light rounded-pill py-3 px-4" href="service.html">View Services</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-carousel-item">
-                    <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="carousel-caption-content p-3">
-                            <h1 class="display-4 mb-4">Reviving Movement for Everybody</h1>
-                            <p class="mb-5 fs-5">Where indigenous play, modern movement science, and Biokinetics come together to help kids learn, adults move, and communities thrive.</p>
-                            <a class="btn btn-primary rounded-pill text-white py-3 px-4 me-2" href="contact.html">Request an Appointment</a>
-                            <a class="btn btn-light rounded-pill py-3 px-4" href="service.html">Join a Play Class</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel End -->
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Services Start -->
-        <div class="container-fluid service py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-0">What We Do</h4>
-                    </div>
-                    <h1 class="display-3 mb-4">Movement Inspired by Culture. Guided by Science.</h1>
-                    <p class="mb-0">Boikanya brings wellness back to its roots—combining indigenous games, movement education, and Biokinetics to create a holistic system of learning, healing, and strengthening.</p>
-                </div>
-
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Orthopaedic Rehabilitation</h5>
-                                    <p class="mb-4">Exercise-based rehabilitation for individuals recovering from musculoskeletal injury or orthopaedic procedures, guided by assessment and referral where appropriate.</p>
-                                    <a href="services/orthopaedic-rehabilitation.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Neurological Rehabilitation</h5>
-                                    <p class="mb-4">Movement programmes focusing on balance, coordination, and functional mobility for individuals with neurological conditions, within professional scope.</p>
-                                    <a href="services/neurological-rehabilitation.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded">
-                           <div class="service-img rounded-top">
-                                <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Pre- and Post-Natal Movement Support</h5>
-                                    <p class="mb-4">Structured physical activity guidance for women during and following pregnancy, adapted to individual needs and medical clearance.</p>
-                                    <a href="services/pre-post-natal-care.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/Logo.png" alt="Boikanya Biokinetics Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+    <a href="index.html" class="nav-item nav-link active">Home</a>
+    <a href="about.html" class="nav-item nav-link">About</a>
+    <a href="service.html" class="nav-item nav-link">Services</a>
+    <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
+    <a href="faq.html" class="nav-item nav-link">FAQ</a>
+    <a href="blog.html" class="nav-item nav-link">Blog</a>
+    <a href="contact.html" class="nav-item nav-link">Contact</a>
+</div>
+                <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-3 ms-lg-3">Book Appointment</a>
             </div>
         </nav>
-
 
         <!-- Carousel Start -->
         <div class="header-carousel owl-carousel">
@@ -226,8 +143,9 @@
             </div>
         </div>
         <!-- Carousel End -->
-    </div>
-    <!-- Navbar & Hero End -->
+        <!-- Navbar & Hero End -->
+
+
 
 
     <!-- Services Start -->
@@ -242,10 +160,10 @@
             </div>
 
             <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded">
                        <div class="service-img rounded-top">
-                            <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <img src="img/Ortho.JPG" class="img-fluid rounded-top w-100" alt="">
                        </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
@@ -256,10 +174,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="service-item rounded">
                        <div class="service-img rounded-top">
-                            <img src="img/service-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <img src="img/Neuro.jpg" class="img-fluid rounded-top w-100" alt="">
                        </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
@@ -270,10 +188,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-12 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item rounded">
                        <div class="service-img rounded-top">
-                            <img src="img/service-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <img src="img/Pre & Post.JPG" class="img-fluid rounded-top w-100" alt="">
                        </div>
                         <div class="service-content rounded-bottom bg-light p-4">
                             <div class="service-content-inner">
@@ -291,62 +209,70 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Services End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid about bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="about-img pb-5 ps-5">
-                        <img src="img/about-1.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
-                        <div class="about-img-inner">
-                            <img src="img/about-2.jpg" class="img-fluid rounded-circle w-100 h-100" alt="Image">
+        <!-- About Start -->
+        <section class="container-fluid about bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-img pb-5 ps-5">
+                            <img src="img/about-1.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                            <div class="about-img-inner">
+                                <img src="img/about-2.jpg" class="img-fluid rounded-circle w-100 h-100" alt="Image">
+                            </div>
                         </div>
-                        
                     </div>
-                </div>
-                <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="section-title text-start mb-5">
-        <h4 class="sub-title pe-3 mb-0">About Us</h4>
-<h1 class="display-3 mb-4">We are Ready to Help Improve Your Movement.</h1>
-<p class="mb-4">
-    At Boikanya Biokinetics, our mission is to provide personalized biokinetics care that 
-    enhances your recovery and overall well-being. We combine professional expertise with a 
-    compassionate approach to help every person achieve their health goals.
-    </p>
-<div class="mb-4">
-    <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Tailored programs for your unique needs.</p>
-    <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Practice led by Duduetsang Keokame (University of the Free State graduate).</p>
-    <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Evidence-based techniques for faster recovery.</p>
-</div>
-<a href="about.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
-
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="section-title text-start mb-5">
+                            <h4 class="sub-title pe-3 mb-0">About Us</h4>
+                            <h1 class="display-3 mb-4">We are Ready to Help Improve Your Movement.</h1>
+                            <p class="mb-4">
+                                At Boikanya Biokinetics, our mission is to provide personalized biokinetics care that 
+                                enhances your recovery and overall well-being. We combine professional expertise with a 
+                                compassionate approach to help every person achieve their health goals.
+                            </p>
+                            <div class="mb-4">
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Tailored programs for your unique needs.</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Practice led by Duduetsang Keokame (University of the Free State graduate).</p>
+                                <p class="text-dark"><i class="fa fa-check text-primary me-2"></i> Evidence-based techniques for faster recovery.</p>
+                            </div>
+                            <a href="about.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- About End -->
+        </section>
+        <!-- About End -->
 
-    <!-- Feature Start -->
-    <div class="container-fluid feature py-5">
-        <div class="container py-5">
-            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
+
+        <!-- Feature Start -->
+        <section class="container-fluid feature py-5" style="background: #f8fafc;">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
+                    </div>
+                    <h1 class="display-3 mb-4">Why Choose Us</h1>
+                    <p class="mb-0">Structured, movement-based programmes tailored to your needs and goals in a supportive, evidence‑based environment.</p>
                 </div>
-                <h1 class="display-3 mb-4">Why Choose Us</h1>
-                <p class="mb-0">Structured, movement-based programmes tailored to your needs and goals in a supportive, evidence‑based environment.</p>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-spa fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
                                     <h5 class="mb-4">Collaborative Care</h5>
                                     <p class="mb-0">We liaise with other practitioners when appropriate for comprehensive support.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="row-cols-1 feature-item p-4">
                             <div class="col-12">
                                 <div class="feature-icon mb-4">
@@ -361,7 +287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="row-cols-1 feature-item p-4">
                             <div class="col-12">
                                 <div class="feature-icon mb-4">
@@ -376,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="row-cols-1 feature-item p-4">
                             <div class="col-12">
                                 <div class="feature-icon mb-4">
@@ -391,33 +317,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-user-md fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Qualified Biokineticist</h5>
-                                    <p class="mb-0">Professional, ethical care; your safety and function are the priority.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-    <a href="feature.html" class="btn btn-primary rounded-pill text-white py-3 px-5 me-3">View More Features</a>
-<a href="appointment.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Book Appointment</a>
-</div>
+                        <a href="feature.html" class="btn btn-primary rounded-pill text-white py-3 px-5 me-3">View More Features</a>
+                        <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-3 px-5">Book Appointment</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Feature End -->
 
 
         <!-- Book Appointment Start -->
-        <div class="container-fluid appointment py-5">
+        <section class="container-fluid appointment py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
@@ -471,7 +382,7 @@
                                         <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Your Gender</option>
                                             <option value="1">Male</option>
-                                            <option value="2">FeMale</option>
+                                            <option value="2">Female</option>
                                             <option value="3">Others</option>
                                         </select>
                                     </div>
@@ -482,7 +393,7 @@
                                         <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
                                             <option selected>Department</option>
                                             <option value="1">Biokinetics</option>
-                                            <option value="2">Physical Helth</option>
+                                            <option value="2">Physical Health</option>
                                             <option value="2">Treatments</option>
                                         </select>
                                     </div>
@@ -498,29 +409,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Modal Video -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
         <!-- Book Appointment End -->
 
 
-        <!-- CTA Start (replaces Team section) -->
+        <!-- CTA Start -->
         <div class="container-fluid py-5" style="background: var(--bs-light);">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
@@ -545,13 +438,13 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
+        <section class="container-fluid testimonial py-5 wow zoomInDown" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="section-title mb-5">
                     <div class="sub-style">
                         <h4 class="sub-title text-white px-3 mb-0">Testimonial</h4>
                     </div>
-                    <h1 class="display-3 mb-4">What Clients are Say</h1>
+                    <h1 class="display-3 mb-4">What Clients Say</h1>
                 </div>
                 <div class="testimonial-carousel owl-carousel">
                     <div class="testimonial-item">
@@ -604,12 +497,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Testimonial End -->
 
 
         <!-- Blog Start -->
-        <div class="container-fluid blog py-5">
+        <section class="container-fluid blog py-5" style="background: #f8fafc;">
             <div class="container py-5">
                 <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="sub-style">
@@ -669,15 +562,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Blog End -->
 
 
         <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <footer class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <img src="img/Logo.png" alt="Boikanya Biokinetics Logo" class="mb-4" style="max-height: 64px; width: auto;">
                             <p>Female-owned biokinetics practice providing movement assessment and rehabilitation services within HPCSA professional standards.</p>
@@ -689,7 +582,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Quick Links</h4>
                             <a href="about.html"><i class="fas fa-angle-right me-2"></i> About</a>
@@ -702,7 +595,7 @@
                             <a href="#"><i class="fas fa-angle-right me-2"></i> Resources</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Services</h4>
                             <a href="services/orthopaedic-rehabilitation.html"><i class="fas fa-angle-right me-2"></i> Orthopaedic Rehabilitation</a>
@@ -716,7 +609,7 @@
                             <a href="services/sports-massage.html"><i class="fas fa-angle-right me-2"></i> Sports Massage</a>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="mb-4 text-white">Contact Info</h4>
                             <a href="https://boikanyabiokinetics.co.za/"><i class="fas fa-globe me-2"></i> boikanyabiokinetics.co.za</a>
@@ -731,11 +624,12 @@
         <!-- Footer End -->
         
         <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
+        <div class="container-fluid copyright py-4" style="margin-top: 0;">
+
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-12 text-center">
-                        <span class="text-white">© 2025 Boikanya Biokinetics Practice</span>
+                        <span class="text-white"> 2025 Boikanya Biokinetics Practice</span>
                     </div>
                 </div>
             </div>
@@ -758,7 +652,8 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         
-    </body>
+        </main>
+</body>
 
 
 </html>

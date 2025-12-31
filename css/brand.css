@@ -1,7 +1,7 @@
 /* Boikanya brand overrides: colors, typography, and calm UI */
 
 :root {
-  --bs-primary: #5dbb88; /* soft green brand */
+  --bs-primary: #939c71; /* soft green brand */
   --bs-secondary: #e0f2e9; /* light green accent */
   --bs-light: #f4f7f5; /* base background */
   --bs-white: #ffffff; /* true white for overlays */
@@ -99,8 +99,8 @@ body {
   color: var(--bs-white);
 }
 .btn.btn-primary:hover {
-  background-color: #4ca876;
-  border-color: #4ca876;
+  background-color: #939c71;
+  border-color: #939c71;
   color: var(--bs-white) !important;
 }
 
