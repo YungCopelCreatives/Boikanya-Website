@@ -556,23 +556,7 @@
                 });
             });
 
-            // Smooth scroll for anchor links
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetElement = document.getElementById(targetId);
-                    
-                    if (targetElement) {
-                        const offsetTop = targetElement.offsetTop - 100;
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
+            
             // Back to top button
             const backToTop = document.getElementById('backToTop');
             
