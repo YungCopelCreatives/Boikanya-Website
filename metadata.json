@@ -1,0 +1,8 @@
+{
+  "name": "Boikanya Biokinetics",
+  "description": "Evidence-based biokinetics practice in Centurion specializing in orthopaedic and neurological rehabilitation, chronic condition management, and fitness assessments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
