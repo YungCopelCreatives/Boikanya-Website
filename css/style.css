@@ -844,7 +844,7 @@
 }
 
 .team .team-item:hover .team-img::before {
-    background: rgba(21, 185, 217, .3);
+    background: rgba(99, 112, 71, .3);
 }
 
 .team .team-item .team-content {
@@ -870,7 +870,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(24, 33, 21, 0.92), rgba(24, 33, 21, 0.92)), url(../img/carousel-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1120,7 +1120,7 @@
 }
 
 .blog .blog-item:hover .blog-img::after {
-    background: rgba(21, 185, 217, .5);
+    background: rgba(99, 112, 71, .5);
 }
 
 .blog .blog-item .blog-centent {
@@ -1135,7 +1135,7 @@
 
 /*** Contact Start ***/
 .contact {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(24, 33, 21, 0.92), rgba(24, 33, 21, 0.92)), url(../img/carousel-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

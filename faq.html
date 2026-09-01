@@ -6,10 +6,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>Boikanya | FAQ</title>
+    
+    <title>Frequently Asked Questions | Boikanya Biokinetics Centurion</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Boikanya Biokinetics FAQ, frequently asked questions, biokinetics practice, medical aid coverage" name="keywords">
-    <meta content="Frequently asked questions about Boikanya Biokinetics, practice details, services, bookings, and medical aid coverage." name="description">
+    <meta content="Boikanya Biokinetics FAQ, medical aid biokinetics coverage South Africa, biokineticist vs physiotherapist, Centurion practice questions" name="keywords">
+    <meta content="Find answers to frequently asked questions about Boikanya Biokinetics, Medical Aid claims, clinical rehabilitation, appointment booking, and practice hours in Centurion." name="description">
+    <link rel="canonical" href="https://boikanya.com/faq.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Frequently Asked Questions | Boikanya Biokinetics" />
+    <meta property="og:description" content="Answers regarding appointments, Medical Aid claims, conditions treated, and rehabilitation in Centurion." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://boikanya.com/faq.html" />
+    <meta property="og:image" content="https://boikanya.com/img/carousel-1.jpg" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,562 +29,275 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Template & Luxury Brand Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/brand.css" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary: #155f82;
-            --secondary: #8fd973;
-            --light: #F8F9FA;
-            --dark: #212529;
-            --accent: #17a2b8;
-        }
-
-        body {
-            font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-        }
-
-        .faq-hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white;
-            padding: 80px 0 60px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .faq-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,213.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
-        }
-
-        .faq-container {
-            max-width: 900px;
-            margin: -40px auto 60px;
-            position: relative;
-            z-index: 10;
-        }
-
-        .faq-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            padding: 40px;
-            margin-bottom: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .faq-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-
-        .faq-category {
-            margin-bottom: 40px;
-        }
-
-        .faq-category-title {
-            color: var(--primary);
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid var(--secondary);
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .faq-category-title i {
-            font-size: 1.5rem;
-            color: var(--secondary);
-        }
-
-        .faq-item {
-            margin-bottom: 20px;
-            border-radius: 15px;
-            overflow: hidden;
-            background: var(--light);
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .faq-item:hover {
-            border-color: var(--secondary);
-            transform: translateX(10px);
-            box-shadow: 0 5px 20px rgba(143, 217, 115, 0.2);
-        }
-
-        .faq-question {
-            padding: 20px 25px;
-            cursor: pointer;
-            font-weight: 600;
-            color: var(--dark);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s ease;
-            text-decoration: none;
-        }
-
-        .faq-question:hover {
-            background: linear-gradient(135deg, rgba(21, 95, 130, 0.1) 0%, rgba(143, 217, 115, 0.1) 100%);
-            color: var(--primary);
-        }
-
-        .faq-question i {
-            transition: transform 0.3s ease;
-            color: var(--secondary);
-        }
-
-        .faq-item:hover .faq-question i {
-            transform: rotate(90deg);
-        }
-
-        .faq-answer {
-            padding: 0 25px 20px;
-            color: #6c757d;
-            line-height: 1.8;
-            display: none;
-            animation: fadeIn 0.3s ease;
-        }
-
-        .faq-answer.show {
-            display: block;
-        }
-
-        .medical-aid-banner {
-            background: linear-gradient(135deg, var(--secondary) 0%, #6fa758 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .medical-aid-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: pulse 3s ease-in-out infinite;
-        }
-
-        .medical-aid-banner h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        .medical-aid-banner p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-
-        .medical-aid-banner .btn {
-            background: white;
-            color: var(--secondary);
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 50px;
-            border: none;
-            transition: all 0.3s ease;
-        }
-
-        .medical-aid-banner .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: var(--primary);
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            opacity: 0;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .back-to-top.show {
-            opacity: 1;
-        }
-
-        .back-to-top:hover {
-            background: var(--secondary);
-            transform: translateY(-5px);
-        }
-
-        @media (max-width: 768px) {
-            .faq-container {
-                margin: -20px 20px 40px;
-            }
-            
-            .faq-card {
-                padding: 25px;
-            }
-            
-            .faq-category-title {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0 align-items-center" style="height: 45px;">
-            <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                <div class="d-flex flex-wrap">
-                    <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, Centurion</a>
-                    <a href="tel:+27671728818" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818</a>
-                    <a href="mailto:admin@boikanya.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com</a>
-                </div>
+
+    <!-- Micro Topbar -->
+    <div class="topbar-micro d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-4">
+                <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener">
+                    <i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, Centurion
+                </a>
+                <a href="tel:+27671728818">
+                    <i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818
+                </a>
+                <a href="mailto:admin@boikanya.com">
+                    <i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com
+                </a>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-flex align-items-center justify-content-end">
-                    <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-primary btn-square border rounded-circle nav-fill me-0 text-white"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="d-flex align-items-center gap-3">
+                <span class="topbar-hpcsa-badge"><i class="fas fa-shield-alt text-sand"></i>HPCSA Reg: BK 0031895 · BASA</span>
+                <a href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener" aria-label="Facebook" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thegratefulbio?utm_source=qr&igsh=MWxrOG0wN3dhaGFzNA==" target="_blank" rel="noopener" aria-label="Instagram" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/duduetsangkeokame?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-white opacity-75 hover-opacity-100"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
-    <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <img src="img/Logo.png" alt="Boikanya Biokinetics Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="testimonial.html" class="nav-item nav-link">Testimonial</a>
-                <a href="faq.html" class="nav-item nav-link active">FAQ</a>
-                <a href="blog.html" class="nav-item nav-link">Blog</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <!-- Floating Island Header -->
+    <div class="floating-nav-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-luxury">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/Logo.png" alt="Boikanya Biokinetics Logo">
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLuxuryCollapse" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-dark fs-4"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
+                <div class="navbar-nav mx-auto py-2 py-lg-0 gap-1">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="service.html" class="nav-link">Services</a>
+                    <a href="testimonial.html" class="nav-link">Testimonials</a>
+                    <a href="faq.html" class="nav-link active">FAQ</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <div class="d-flex align-items-center mt-3 mt-lg-0">
+                    <a href="appointment.html" class="nav-cta-btn">
+                        <span>Book Consultation</span>
+                        <i class="fas fa-arrow-right fs-6"></i>
+                    </a>
+                </div>
             </div>
-            <a href="appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-3 ms-lg-3">Book Appointment</a>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+    </div>
 
-    <!-- FAQ Hero Section -->
-    <section class="faq-hero">
+    <!-- Page Header -->
+    <div class="page-header-luxury pattern-kinetic-dark">
         <div class="container text-center">
-            <h1 class="display-4 mb-4 wow fadeInDown">Frequently Asked Questions</h1>
-            <p class="lead wow fadeInUp" data-wow-delay="0.2s">Everything you need to know about Boikanya Biokinetics</p>
+            <span class="badge-pill-dark mb-3">Knowledge & Support</span>
+            <h1>Frequently Asked Questions</h1>
+            <p class="mx-auto" style="max-width: 600px;">Everything you need to know regarding Medical Aid coverage, clinical rehabilitation, and practice appointments.</p>
+            <nav aria-label="breadcrumb" class="mt-3">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <div class="accordion accordion-flush" id="faqAccordion">
+                        
+                        <!-- Item 1 -->
+                        <div class="accordion-item mb-3 border rounded-4 overflow-hidden bg-white shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold text-dark fs-6 py-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is Biokinetics and how does it differ from Physiotherapy?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Biokinetics is the science of movement and the application of scientifically prescribed exercise for rehabilitation, chronic disease management, and sports performance. While physiotherapy typically manages acute pain and provides hands-on manual manipulation immediately after injury, biokinetics takes over in the sub-acute and final phases to rebuild muscle symmetry, restore joint stability, and prevent re-injury through active movement.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item mb-3 border rounded-4 overflow-hidden bg-white shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-dark fs-6 py-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Are Biokinetics sessions covered by Medical Aid schemes?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Yes! Biokinetics is a recognized Allied Healthcare profession registered with the HPCSA. Most major South African medical aids—including Discovery Health, Bonitas, Medscheme, Momentum, Fedhealth, and GEMS—cover our consultations under physical therapy limits, chronic illness benefit pools, or day-to-day medical savings. We provide full itemized statements with ICD-10 diagnostic codes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item mb-3 border rounded-4 overflow-hidden bg-white shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold text-dark fs-6 py-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do I need to be a Virgin Active member to attend sessions?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    No, you do not need to be a Virgin Active member. Non-members are warmly welcomed and granted direct access to the club reception for their scheduled appointments with Boikanya Biokinetics at Eco-Park Centurion.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item mb-3 border rounded-4 overflow-hidden bg-white shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold text-dark fs-6 py-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What happens during the initial 60-minute assessment?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Your initial appointment includes an in-depth clinical history review, static and dynamic postural analysis, joint range-of-motion goniometry, muscle strength/imbalance testing, and specialized functional movement screening. Based on these objective baselines, we formulate your individualized progressive treatment plan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="accordion-item mb-3 border rounded-4 overflow-hidden bg-white shadow-sm">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed fw-bold text-dark fs-6 py-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What are the therapeutic benefits of Indigenous Games?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body px-4 pb-4 text-muted">
+                                    Traditional African play like Diketo, Morabaraba, Kgati, and Dibeke engages neuroplasticity through multidirectional agility, fine motor dexterity, proprioceptive awareness, and joyful social interaction. Clinically, it provides exceptional rehabilitative stimulus for pediatric developmental coordination, fall prevention in older adults, and engaging community movement therapy.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- FAQ Content -->
-    <div class="faq-container">
-        <!-- Medical Aid Banner -->
-        <div class="medical-aid-banner wow fadeInUp">
-            <h3><i class="fas fa-shield-alt me-2"></i>Medical Aid Coverage</h3>
-            <p>We accept most major medical aid schemes! Biokinetics services are covered by many medical aid plans when medically necessary. Contact your provider to check your specific coverage and benefits.</p>
-            <a href="contact.html" class="btn">Verify Your Coverage</a>
-        </div>
-
-        <div class="faq-card wow fadeInUp">
-            <!-- General Questions -->
-            <div class="faq-category">
-                <h2 class="faq-category-title">
-                    <i class="fas fa-info-circle"></i>
-                    General Questions
-                </h2>
-                
-                <div class="faq-item">
-                    <a href="#what-is-biokinetics" class="faq-question">
-                        <span>What is Biokinetics?</span>
-                        <i class="fas fa-chevron-right"></i>
+    <!-- Direct Inquiry CTA -->
+    <section class="py-5" style="background-color: #FAF7F2;">
+        <div class="container py-4 text-center">
+            <div class="p-4 p-md-5 bg-white rounded-4 border shadow-sm mx-auto" style="max-width: 800px;">
+                <span class="badge-pill-brand mb-3">Still Have Questions?</span>
+                <h2 class="display-6 text-dark fw-bold mb-3">We Are Here to Guide You</h2>
+                <p class="text-muted mb-4">Contact our practice coordinator directly via telephone or WhatsApp for immediate tariff assistance.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="contact.html" class="btn-luxury-primary">
+                        <span>Contact Practice Team</span>
+                        <i class="fas fa-envelope ms-2"></i>
                     </a>
-                    <div id="what-is-biokinetics" class="faq-answer">
-                        Biokinetics is a healthcare profession focused on using exercise and movement to improve health, function, and quality of life, especially for those with chronic conditions or injuries. Our biokineticists use evidence-based exercise prescription to help you achieve your movement goals.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#practice-location" class="faq-question">
-                        <span>Where is the practice located?</span>
-                        <i class="fas fa-chevron-right"></i>
+                    <a href="https://wa.me/27671728818" target="_blank" rel="noopener" class="btn-luxury-secondary">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        <span>WhatsApp Quick Chat</span>
                     </a>
-                    <div id="practice-location" class="faq-answer">
-                        We're located at Eco-Park Virgin Active, 270 Witch-Hazel Avenue, Centurion, Gauteng, 0157. The facility offers secure parking and is easily accessible from major routes.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#how-to-book" class="faq-question">
-                        <span>How do I book an appointment?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="how-to-book" class="faq-answer">
-                        Use our online booking system powered by Bookem to find an available slot and book directly. Simply click "Book Appointment" on any page, select your preferred date and time, and confirm your booking instantly.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#business-hours" class="faq-question">
-                        <span>What are your business hours?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="business-hours" class="faq-answer">
-                        Monday–Thursday: 7:00am–18:00pm, Friday: 7:00am–15:00pm. Weekend appointments may be available on request.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#contact-practice" class="faq-question">
-                        <span>How do I contact the practice?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="contact-practice" class="faq-answer">
-                        Email us at admin@boikanya.com or call (+27) 067 172 8818. We typically respond within 24 hours during business days.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Appointments & Bookings -->
-            <div class="faq-category">
-                <h2 class="faq-category-title">
-                    <i class="fas fa-calendar-check"></i>
-                    Appointments & Bookings
-                </h2>
-                
-                <div class="faq-item">
-                    <a href="#reschedule-cancel" class="faq-question">
-                        <span>Can I reschedule or cancel?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="reschedule-cancel" class="faq-answer">
-                        Yes, but please provide at least 24 hours' notice to avoid a cancellation fee. You can manage your bookings through our online system or contact us directly.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#referral-required" class="faq-question">
-                        <span>Is a referral required?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="referral-required" class="faq-answer">
-                        No referral is needed. However, if you are under medical supervision, we can coordinate with your healthcare provider to ensure comprehensive care.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#medical-aid-coverage" class="faq-question">
-                        <span>Are sessions covered by medical aid?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="medical-aid-coverage" class="faq-answer">
-                        Yes! We accept most major medical aid schemes including Discovery, Momentum, Bonitas, and others. Coverage depends on your specific plan and benefits. We can assist with claims and provide necessary documentation. Contact your provider to verify your biokinetics benefits.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#what-to-bring" class="faq-question">
-                        <span>What should I bring to my appointment?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="what-to-bring" class="faq-answer">
-                        Comfortable clothing for exercise, a list of current medications, any relevant medical reports or imaging, and your medical aid card if applicable.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Services -->
-            <div class="faq-category">
-                <h2 class="faq-category-title">
-                    <i class="fas fa-heartbeat"></i>
-                    Services
-                </h2>
-                
-                <div class="faq-item">
-                    <a href="#conditions-treated" class="faq-question">
-                        <span>What conditions do you treat?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="conditions-treated" class="faq-answer">
-                        We treat orthopaedic injuries, neurological conditions, chronic diseases, pre- and post-natal care, sports injuries, and provide fitness assessments and body composition analysis.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#group-classes" class="faq-question">
-                        <span>Do you offer group classes?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="group-classes" class="faq-answer">
-                        Yes, group movement classes are available. See our Services page for details on current class schedules and offerings.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#home-visits" class="faq-question">
-                        <span>Do you offer home visits?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="home-visits" class="faq-answer">
-                        Home visits may be arranged on request, subject to availability and location. Additional fees may apply for home-based services.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Other -->
-            <div class="faq-category">
-                <h2 class="faq-category-title">
-                    <i class="fas fa-question-circle"></i>
-                    Other Questions
-                </h2>
-                
-                <div class="faq-item">
-                    <a href="#parking" class="faq-question">
-                        <span>Is parking available?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="parking" class="faq-answer">
-                        Yes, secure parking is available at Eco-Park Virgin Active at no additional cost for our clients.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#child-friendly" class="faq-question">
-                        <span>Is the practice child-friendly?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="child-friendly" class="faq-answer">
-                        Yes, we offer play-based movement sessions for children and create a welcoming environment for young clients.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <a href="#get-updates" class="faq-question">
-                        <span>How do I get updates?</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <div id="get-updates" class="faq-answer">
-                        Follow us on social media or subscribe to our newsletter for the latest news, health tips, and practice updates.
-                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Contact CTA -->
-        <div class="text-center mt-5">
-            <h3 class="mb-3">Still have questions?</h3>
-            <p class="mb-4">We're here to help! Get in touch with our friendly team.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5">Contact Us</a>
-                <a href="appointment.html" class="btn btn-secondary rounded-pill py-3 px-5">Book Appointment</a>
+    <!-- Architectural Luxury Footer -->
+    <footer class="footer-luxury">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-4">
+                    <a href="index.html" class="d-inline-block mb-4">
+                        <img src="img/Logo.png" alt="Boikanya Biokinetics" style="height: 52px; filter: brightness(0) invert(1);">
+                    </a>
+                    <p class="pe-lg-4 mb-4" style="color: rgba(255, 255, 255, 0.72); font-size: 0.95rem;">
+                        Boikanya Biokinetics is a premier clinical movement practice. Movement inspired by culture, guided by science. Restoring human strength, mobility, and vitality in Centurion.
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <a href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thegratefulbio?utm_source=qr&igsh=MWxrOG0wN3dhaGFzNA==" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/duduetsangkeokame?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="footer-social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/27671728818" target="_blank" rel="noopener" class="footer-social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5>Explore</h5>
+                    <div class="footer-link-item"><a href="index.html">Home</a></div>
+                    <div class="footer-link-item"><a href="about.html">About Duduetsang</a></div>
+                    <div class="footer-link-item"><a href="service.html">Clinical Services</a></div>
+                    <div class="footer-link-item"><a href="testimonial.html">Patient Stories</a></div>
+                    <div class="footer-link-item"><a href="faq.html">Medical Aid & FAQ</a></div>
+                    <div class="footer-link-item"><a href="blog.html">Clinical Blog</a></div>
+                    <div class="footer-link-item"><a href="contact.html">Location & Contact</a></div>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h5>Specializations</h5>
+                    <div class="footer-link-item"><a href="services/orthopaedic-rehabilitation.html">Orthopaedic Rehab</a></div>
+                    <div class="footer-link-item"><a href="services/neurological-rehabilitation.html">Neurological Recovery</a></div>
+                    <div class="footer-link-item"><a href="services/management-of-chronic-conditions.html">Chronic Disease Care</a></div>
+                    <div class="footer-link-item"><a href="services/pre-post-natal-care.html">Pre & Post Natal Movement</a></div>
+                    <div class="footer-link-item"><a href="services/fitness-assessment.html">Vitality Assessment</a></div>
+                    <div class="footer-link-item"><a href="services/sports-massage.html">Sports & Recovery Massage</a></div>
+                    <div class="footer-link-item"><a href="blog/indigenous-games-movement-therapy.html">Indigenous Play Therapy</a></div>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5>Centurion Clinic</h5>
+                    <p class="small mb-2" style="color: rgba(255, 255, 255, 0.75);">
+                        <i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, 270 Witch-Hazel Avenue, Centurion, Gauteng, 0157
+                    </p>
+                    <p class="small mb-2" style="color: rgba(255, 255, 255, 0.75);">
+                        <i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818
+                    </p>
+                    <p class="small mb-3" style="color: rgba(255, 255, 255, 0.75);">
+                        <i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com
+                    </p>
+                    <div class="p-3 rounded-3" style="background: rgba(255, 255, 255, 0.06); font-size: 0.825rem;">
+                        <div class="fw-semibold text-white mb-1"><i class="fas fa-clock text-primary me-2"></i>Practice Hours</div>
+                        <div>Mon – Thu: 06:00 – 18:00</div>
+                        <div>Fri: 06:00 – 16:00</div>
+                        <div>Sat: 07:00 – 13:00 (By Appointment)</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-bar d-flex flex-wrap justify-content-between align-items-center">
+                <div>
+                    © 2026 Boikanya Biokinetics. All rights reserved. Registered with HPCSA & BASA.
+                </div>
+                <div class="mt-2 mt-sm-0">
+                    <span class="me-3">Practice No: Available on request</span>
+                    <a href="contact.html" class="text-decoration-underline" style="color: rgba(255, 255, 255, 0.5);">Privacy & Disclaimers</a>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-
-    <!-- JavaScript -->
+    <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script>
-        // Initialize WOW.js
-        new WOW().init();
-
-        // FAQ Toggle Functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href').substring(1);
-                    const answer = document.getElementById(targetId);
-                    
-                    // Toggle current answer
-                    answer.classList.toggle('show');
-                    
-                    // Close other answers in the same category
-                    const category = this.closest('.faq-category');
-                    const otherAnswers = category.querySelectorAll('.faq-answer:not(#' + targetId + ')');
-                    otherAnswers.forEach(otherAnswer => {
-                        otherAnswer.classList.remove('show');
-                    });
-                });
-            });
-
-            
-            // Back to top button
-            const backToTop = document.getElementById('backToTop');
-            
-            window.addEventListener('scroll', function() {
-                if (window.pageYOffset > 300) {
-                    backToTop.classList.add('show');
-                } else {
-                    backToTop.classList.remove('show');
-                }
-            });
-
-            backToTop.addEventListener('click', function(e) {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
