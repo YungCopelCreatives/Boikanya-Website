@@ -87,7 +87,20 @@ document.addEventListener('DOMContentLoaded', function () {
       const serviceVal = serviceField ? (serviceField.options[serviceField.selectedIndex]?.text || serviceField.value) : 'Biokinetics Consultation';
       const notesVal = notesField?.value.trim() || 'No additional notes.';
 
-      showMessage(`<strong>Thank you, ${nameField.value.trim()}!</strong> We have received your consultation request for <em>${serviceVal}</em>. Our practice coordinator will contact you shortly to confirm your session.`, true);
+      // Send the request to the Care Coordinator on WhatsApp, prefilled with the form details.
+      const lines = [
+        'Hello Boikanya, I would like to request a consultation.',
+        `Name: ${nameField.value.trim()}`,
+        `Email: ${emailField.value.trim()}`,
+        `Phone: ${phoneField.value.trim()}`,
+        `Service: ${serviceVal}`,
+        `Notes: ${notesVal}`
+      ];
+      const waUrl = 'https://wa.me/27671728818?text=' + encodeURIComponent(lines.join('\n'));
+      window.open(waUrl, '_blank', 'noopener');
+
+      const safeName = nameField.value.trim().replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      showMessage(`<strong>Thank you, ${safeName}!</strong> WhatsApp has opened with your request. Press send and our Care Coordinator will contact you to confirm your session. If WhatsApp did not open, <a href="${waUrl}" target="_blank" rel="noopener">tap here</a> or call 067 172 8818.`, true);
 
       // Reset form
       form.reset();
@@ -139,12 +152,19 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      showMessage(`<strong>Thank you, ${nameInput.value.trim()}!</strong> Your message has been sent to admin@boikanya.com. We will respond promptly.`, true);
+      // Open the visitor's email app with the message ready to send to the practice.
+      const subject = 'Website enquiry from ' + nameInput.value.trim();
+      const body = messageInput.value.trim() + '\n\n' + nameInput.value.trim() + '\n' + emailInput.value.trim();
+      const mailUrl = 'mailto:admin@boikanya.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      window.location.href = mailUrl;
+
+      const safeName = nameInput.value.trim().replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      showMessage(`<strong>Thank you, ${safeName}!</strong> Your email app has opened with your message to admin@boikanya.com. Press send and we will reply soon. You can also WhatsApp us on 067 172 8818.`, true);
       contactForm.reset();
     });
   }
 
-  // 6. Architectural Clinical Stage Showcase Controller
+  // 6. Architectural Stage Showcase Controller
   const stageTabs = document.querySelectorAll('.stage-tab-btn');
   const stageSlides = document.querySelectorAll('.stage-slide-view');
   const stageProgressBar = document.getElementById('stage-progress-bar');
@@ -154,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (stageTabs.length > 0 && stageSlides.length > 0) {
     let currentStageIndex = 0;
-    const stageDuration = 6000; // 6 seconds per clinical stage
+    const stageDuration = 6000; // 6 seconds per stage
     let stageTimer = null;
     let isHovered = false;
 
