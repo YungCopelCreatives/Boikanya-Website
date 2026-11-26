@@ -137,7 +137,8 @@ def footer(p):
                             <li><a href="{p}biokinetics.html">Biokinetics</a></li>
                             <li><a href="{p}wellness.html">Wellness</a></li>
                             <li><a href="{p}about.html">About</a></li>
-                            <li><a href="{p}blog.html" data-blog-link="1">Resources</a></li>
+                            <li><a href="{p}blog.html" data-blog-link="1">Blog</a></li>
+                            <li><a href="{p}faq.html">FAQ &amp; medical aid</a></li>
                             <li><a href="{p}contact.html">Contact</a></li>
                         </ul>
                     </div>

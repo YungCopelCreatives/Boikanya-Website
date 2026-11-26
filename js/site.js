@@ -33,6 +33,19 @@
       });
     }
 
+    // Fade sections in as they scroll into view on the new pages
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var targets = document.querySelectorAll(".bk-page main > section:not(.bk-hero) .container > *");
+    if (!reduce && "IntersectionObserver" in window && targets.length) {
+      document.documentElement.classList.add("bk-anim");
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      targets.forEach(function (el) { el.classList.add("bk-reveal"); io.observe(el); });
+    }
+
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = new Date().getFullYear();
     });

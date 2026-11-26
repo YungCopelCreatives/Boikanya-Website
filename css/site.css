@@ -7,8 +7,8 @@
 :root {
   --bk-forest: #3f4f37;        /* buttons, footer, Biokinetics accent */
   --bk-forest-dark: #2f3c29;
-  --bk-olive: #8c8a52;         /* Wellness accent */
-  --bk-olive-dark: #737140;
+  --bk-olive: #74723f;         /* Wellness accent (passes 4.5:1 with white text) */
+  --bk-olive-dark: #5f5d33;
   --bk-sage: #6f7d58;
   --bk-cream: #f7f4ee;
   --bk-cream-2: #efeae0;
@@ -248,8 +248,20 @@ body.bk-page {
     margin-top: 12px;
   }
   .site-header .navbar-nav .nav-link.active::before { display: none; }
-  .site-header .dropdown-menu { display: none !important; }
+  /* On phones the submenus show as an indented list under each item */
+  .site-header .dropdown-menu {
+    display: block;
+    position: static;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 6px 14px;
+    margin: 0;
+    background: transparent;
+    min-width: 0;
+  }
+  .site-header .dropdown-item { font-size: 0.85rem; padding: 6px 10px; color: var(--bk-text); }
   .site-header .navbar-nav .nav-link.dropdown-toggle::after { display: none; }
+  .site-header .navbar-collapse { max-height: calc(100vh - 80px); overflow-y: auto; }
   .bk-header-actions { margin-top: 12px; }
 }
 @media (max-width: 400px) {
@@ -693,4 +705,29 @@ a.bk-help-card:hover { box-shadow: 0 14px 30px -18px rgba(31, 36, 28, 0.45); tra
 /* Wide gutters overflow small screens; tighten them below desktop. */
 @media (max-width: 991.98px) {
   .row.g-5, .row.gx-5 { --bs-gutter-x: 1.5rem; }
+}
+
+/* Keyboard focus */
+a:focus-visible, button:focus-visible, .bk-btn:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--bk-forest);
+  outline-offset: 3px;
+}
+.site-footer a:focus-visible { outline-color: #fff; }
+
+/* Keep section headings clear of the sticky header when a link jumps to them */
+[id] { scroll-margin-top: 96px; }
+
+/* Gentle fade-up as sections scroll into view (set up by js/site.js) */
+.bk-anim .bk-reveal { opacity: 0; transform: translateY(16px); transition: opacity .5s ease, transform .5s ease; }
+.bk-anim .bk-reveal.is-visible { opacity: 1; transform: none; }
+
+/* Smaller WhatsApp bubble on phones so it covers less content */
+@media (max-width: 575.98px) {
+  .floating-whatsapp-bubble { width: 48px !important; height: 48px !important; font-size: 1.5rem !important; right: 14px !important; bottom: 14px !important; }
+}
+
+/* Respect the visitor's reduce-motion setting */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  .bk-anim .bk-reveal { opacity: 1; transform: none; }
 }
