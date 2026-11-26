@@ -3,7 +3,7 @@
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge)](https://boikanyabiokinetics.co.za)
 
 Welcome to **Boikanya Biokinetics** official website repository!  
-This project represents the online presence of Boikanya, a professional physiotherapy & biokinetics clinic dedicated to helping clients **reclaim the way they move**.
+This project represents the online presence of Boikanya, a professional biokinetics and wellness practice dedicated to helping clients **reclaim the way they move**.
 
 ---
 
@@ -51,3 +51,20 @@ Boikanya-Website/
 ├── images/
 │   └── (all website images)
 └── README.md
+
+## Pages
+
+- `index.html` — Home: the two paths (Biokinetics and Wellness)
+- `biokinetics.html` — Biokinetics, including medical aid
+- `wellness.html` — Wellness programmes (workplaces, communities, groups, youth, events)
+- `legal.html` — Privacy Policy, POPIA notice, Terms and Cancellation Policy
+
+## Shared header and footer
+
+The header, footer and shared `<head>` assets are kept in `tools/layout.py`.
+Edit them there and run `python3 tools/layout.py` to update every page.
+
+## Settings that need account IDs
+
+`js/site-config.js` holds the Google Analytics / Google Ads tag IDs, the Kit form ID
+for the email signup and an optional Kit blog URL. Each feature stays off until its value is filled in.

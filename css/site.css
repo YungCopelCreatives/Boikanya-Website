@@ -1,0 +1,696 @@
+/* ==========================================================================
+   BOIKANYA — Biokinetics | Wellness
+   Shared header, footer and the Home / Biokinetics / Wellness page styles.
+   Loaded after brand.css on every page.
+   ========================================================================== */
+
+:root {
+  --bk-forest: #3f4f37;        /* buttons, footer, Biokinetics accent */
+  --bk-forest-dark: #2f3c29;
+  --bk-olive: #8c8a52;         /* Wellness accent */
+  --bk-olive-dark: #737140;
+  --bk-sage: #6f7d58;
+  --bk-cream: #f7f4ee;
+  --bk-cream-2: #efeae0;
+  --bk-card: #f4f1ea;
+  --bk-ink: #1f241c;
+  --bk-text: #4a5045;
+  --bk-line: rgba(63, 79, 55, 0.14);
+  --bk-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --bk-sans: "Jost", "Poppins", system-ui, sans-serif;
+}
+
+/* ---------- Page canvas used by the new pages ---------- */
+body.bk-page {
+  background: #fff;
+  color: var(--bk-text);
+  font-family: var(--bk-sans);
+  font-weight: 400;
+}
+.bk-page h1, .bk-page h2, .bk-page h3, .bk-page h4, .bk-page h5 { color: var(--bk-ink); }
+
+.bk-eyebrow {
+  display: inline-block;
+  font-family: var(--bk-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bk-forest);
+  margin-bottom: 0.6rem;
+}
+.bk-display {
+  font-family: var(--bk-serif);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  color: var(--bk-ink);
+}
+.bk-h2 {
+  font-family: var(--bk-serif);
+  font-weight: 500;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+.bk-h3 {
+  font-family: var(--bk-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.bk-lead { font-size: 1rem; line-height: 1.7; color: var(--bk-text); }
+.bk-small { font-size: 0.85rem; line-height: 1.6; color: var(--bk-text); }
+.bk-section { padding: 72px 0; }
+.bk-section-tight { padding: 48px 0; }
+.bk-bg-cream { background: var(--bk-cream); }
+.bk-divider { border: 0; border-top: 1px solid var(--bk-line); margin: 0; opacity: 1; }
+.bk-section-head { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+
+/* ---------- Buttons ---------- */
+.bk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 24px;
+  border-radius: 6px;
+  font-family: var(--bk-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease;
+  cursor: pointer;
+}
+.bk-btn:hover { transform: translateY(-1px); }
+.bk-btn-primary { background: var(--bk-forest); color: #fff; }
+.bk-btn-primary:hover { background: var(--bk-forest-dark); color: #fff; }
+.bk-btn-olive { background: var(--bk-olive); color: #fff; }
+.bk-btn-olive:hover { background: var(--bk-olive-dark); color: #fff; }
+.bk-btn-outline { background: #fff; color: var(--bk-ink); border-color: rgba(31, 36, 28, 0.35); }
+.bk-btn-outline:hover { border-color: var(--bk-forest); color: var(--bk-forest); }
+.bk-btn-block { width: 100%; }
+.bk-link {
+  color: var(--bk-forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 500;
+}
+.bk-link:hover { color: var(--bk-forest-dark); }
+.bk-link-caps {
+  color: var(--bk-forest);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.bk-link-caps:hover { color: var(--bk-forest-dark); }
+
+/* ==========================================================================
+   SHARED HEADER
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: saturate(160%) blur(12px);
+  -webkit-backdrop-filter: saturate(160%) blur(12px);
+  border-bottom: 1px solid var(--bk-line);
+  font-family: var(--bk-sans);
+}
+.site-header .navbar {
+  padding: 14px 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  position: static !important;
+}
+.bk-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--bk-ink);
+}
+.bk-brand-mark {
+  font-family: var(--bk-serif);
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--bk-forest);
+}
+.bk-brand-text { display: flex; flex-direction: column; line-height: 1; }
+.bk-brand-name {
+  font-family: var(--bk-sans);
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  color: var(--bk-ink);
+}
+.bk-brand-sub {
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--bk-forest);
+  margin-top: 5px;
+}
+.site-header .navbar-nav { gap: 4px; }
+.site-header .navbar-nav .nav-link {
+  font-family: var(--bk-sans);
+  font-size: 0.74rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bk-ink) !important;
+  padding: 10px 12px !important;
+  position: relative;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+.site-header .navbar-nav .nav-link::after { display: none; }
+.site-header .navbar-nav .nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: 2px;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+}
+.site-header .navbar-nav .nav-link:hover { color: var(--bk-forest) !important; }
+.site-header .navbar-nav .nav-link.active { color: var(--bk-forest) !important; }
+.site-header .navbar-nav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 2px;
+  height: 2px;
+  background: var(--bk-forest);
+}
+.site-header .dropdown-menu {
+  border: 1px solid var(--bk-line);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px -12px rgba(31, 36, 28, 0.2);
+  padding: 8px;
+  margin-top: 0;
+  min-width: 230px;
+}
+.site-header .dropdown-item {
+  font-size: 0.88rem;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--bk-ink);
+}
+.site-header .dropdown-item:hover,
+.site-header .dropdown-item:focus { background: var(--bk-cream); color: var(--bk-forest); }
+@media (min-width: 992px) {
+  .site-header .dropdown:hover > .dropdown-menu,
+  .site-header .dropdown:focus-within > .dropdown-menu { display: block; }
+}
+.bk-header-social { display: flex; align-items: center; gap: 4px; }
+.bk-header-social a {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--bk-ink);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.bk-header-social a:hover { background: var(--bk-cream); color: var(--bk-forest); }
+.bk-header-cta {
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+}
+.site-header .navbar-toggler {
+  border: 0;
+  box-shadow: none !important;
+  color: var(--bk-ink);
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  border: 1px solid var(--bk-line) !important;
+  border-radius: 8px;
+}
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse {
+    padding: 12px 0 18px;
+    border-top: 1px solid var(--bk-line);
+    margin-top: 12px;
+  }
+  .site-header .navbar-nav .nav-link.active::before { display: none; }
+  .site-header .dropdown-menu { display: none !important; }
+  .site-header .navbar-nav .nav-link.dropdown-toggle::after { display: none; }
+  .bk-header-actions { margin-top: 12px; }
+}
+@media (max-width: 400px) {
+  .bk-brand-mark { font-size: 2.1rem; }
+  .bk-brand-name { font-size: 1.1rem; }
+  .bk-brand-sub { font-size: 0.52rem; }
+}
+
+/* ==========================================================================
+   SHARED FOOTER
+   ========================================================================== */
+.site-footer {
+  background: var(--bk-forest);
+  color: rgba(255, 255, 255, 0.82);
+  font-family: var(--bk-sans);
+  padding: 56px 0 0;
+  font-size: 0.88rem;
+}
+.site-footer p, .site-footer span, .site-footer div { color: rgba(255, 255, 255, 0.82); }
+.site-footer a { color: rgba(255, 255, 255, 0.82); text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.site-footer .bk-brand-name, .site-footer .bk-brand-mark { color: #fff; }
+.site-footer .bk-brand-sub { color: rgba(255, 255, 255, 0.7); }
+.site-footer h5 {
+  color: #fff;
+  font-family: var(--bk-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin-bottom: 8px; }
+.site-footer .bk-footer-legal a { text-decoration: underline; text-underline-offset: 3px; }
+.bk-footer-contact li { display: flex; gap: 10px; align-items: flex-start; }
+.bk-footer-contact i { width: 16px; margin-top: 4px; color: rgba(255, 255, 255, 0.7); }
+.bk-footer-social { display: flex; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+.bk-footer-social a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.bk-footer-social a:hover { background: rgba(255, 255, 255, 0.12); text-decoration: none; }
+.bk-footer-sides { display: flex; gap: 24px; margin-top: 16px; font-size: 0.8rem; }
+.bk-footer-sides strong { color: #fff; display: block; font-weight: 500; }
+.bk-newsletter {
+  margin-top: 40px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}
+.bk-newsletter input[type="email"] {
+  flex: 1 1 220px;
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+.bk-newsletter input::placeholder { color: rgba(255, 255, 255, 0.6); }
+.bk-newsletter .bk-btn { background: #fff; color: var(--bk-forest); }
+.bk-footer-bottom {
+  margin-top: 40px;
+  padding: 18px 0 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  text-align: center;
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+.bk-footer-bottom p, .bk-footer-bottom span { margin: 0 0 4px; color: rgba(255, 255, 255, 0.7); }
+
+/* ==========================================================================
+   HERO (Home + Biokinetics + Wellness)
+   ========================================================================== */
+.bk-hero {
+  background: var(--bk-cream);
+  overflow: hidden;
+  --bk-gutter: 24px;
+}
+@media (min-width: 992px)  { .bk-hero { --bk-gutter: calc((100vw - 960px) / 2 + 12px); } }
+@media (min-width: 1200px) { .bk-hero { --bk-gutter: calc((100vw - 1140px) / 2 + 12px); } }
+@media (min-width: 1400px) { .bk-hero { --bk-gutter: calc((100vw - 1320px) / 2 + 12px); } }
+@media (min-width: 992px) {
+  .bk-hero > .container { max-width: none; padding: 0; }
+  .bk-hero > .container > .row { margin: 0; }
+  .bk-hero-copy { padding-left: var(--bk-gutter) !important; padding-right: 48px !important; }
+  .bk-hero .col-lg-6:last-child { padding: 0; }
+}
+.bk-hero .row { min-height: 520px; }
+.bk-hero-copy { padding-top: 56px; padding-bottom: 56px; }
+.bk-hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.1rem); margin-bottom: 18px; }
+.bk-hero-tagline {
+  font-family: var(--bk-sans);
+  font-size: 1.3rem;
+  color: var(--bk-forest);
+  margin-bottom: 18px;
+}
+.bk-hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0 22px; }
+.bk-hero-note { font-size: 0.88rem; color: var(--bk-text); }
+.bk-hero-media { position: relative; height: 100%; min-height: 360px; }
+.bk-hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--bk-focus, center);
+}
+.bk-hero-media::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 25%;
+  background: linear-gradient(90deg, var(--bk-cream), rgba(247, 244, 238, 0));
+  z-index: 1;
+}
+.bk-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.bk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--bk-line);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--bk-ink);
+}
+.bk-badge i { color: var(--bk-forest); }
+@media (max-width: 991.98px) {
+  .bk-hero { background: var(--bk-cream); }
+  .bk-hero .row { min-height: 0; }
+  .bk-hero-copy { padding-top: 40px; padding-bottom: 28px; }
+  .bk-hero-media { min-height: 300px; margin: 0 -12px; }
+  .bk-hero-media::before { display: none; }
+}
+
+/* ==========================================================================
+   HOME
+   ========================================================================== */
+.bk-side-card {
+  background: var(--bk-card);
+  border-radius: 10px;
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bk-side-head { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; }
+.bk-icon-circle {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: var(--bk-forest);
+}
+.bk-icon-circle.olive { background: var(--bk-olive); }
+.bk-side-card h3 {
+  font-family: var(--bk-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.bk-side-sub { color: var(--bk-forest); font-size: 1.05rem; line-height: 1.35; margin-bottom: 10px; }
+.bk-side-card.wellness .bk-side-sub { color: var(--bk-olive-dark); }
+.bk-tags {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 10px;
+  margin: 8px 0 26px;
+  padding: 0;
+  list-style: none;
+  font-size: 0.82rem;
+  color: var(--bk-ink);
+}
+.bk-tags li { display: flex; align-items: center; gap: 8px; }
+.bk-tags i { color: var(--bk-forest); width: 16px; text-align: center; }
+.bk-side-card.wellness .bk-tags i { color: var(--bk-olive); }
+.bk-side-card .bk-btn { margin-top: auto; }
+@media (max-width: 575.98px) {
+  .bk-side-card { padding: 24px; }
+  .bk-tags { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.bk-pillars { text-align: center; }
+.bk-pillar { padding: 8px 18px; height: 100%; }
+@media (min-width: 768px) {
+  .bk-pillars > div + div .bk-pillar { border-left: 1px solid var(--bk-line); }
+}
+.bk-soft-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--bk-cream);
+  color: var(--bk-forest);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  margin-bottom: 14px;
+}
+
+.bk-steps { display: flex; gap: 8px; align-items: flex-start; }
+.bk-step { flex: 1 1 0; text-align: left; position: relative; }
+.bk-step .bk-soft-icon { background: #fff; box-shadow: 0 6px 18px -8px rgba(31, 36, 28, 0.25); }
+.bk-step-arrow {
+  flex: 0 0 60px;
+  margin-top: 30px;
+  border-top: 1px dotted var(--bk-ink);
+  position: relative;
+  opacity: 0.6;
+}
+.bk-step-arrow::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -4px;
+  border-left: 6px solid var(--bk-ink);
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+}
+.bk-steps.centered .bk-step { text-align: center; }
+@media (max-width: 767.98px) {
+  .bk-steps { flex-wrap: wrap; gap: 24px; }
+  .bk-step { flex: 1 1 40%; }
+  .bk-step-arrow { display: none; }
+}
+
+.bk-meet { background: #fff; }
+.bk-meet-img { height: 100%; min-height: 320px; position: relative; }
+.bk-meet-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+.bk-meet-copy { padding: 48px 0 48px 24px; }
+@media (max-width: 991.98px) { .bk-meet-copy { padding: 32px 0; } }
+
+.bk-review {
+  background: var(--bk-card);
+  border-radius: 10px;
+  padding: 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bk-stars { color: var(--bk-olive); letter-spacing: 2px; margin-bottom: 12px; font-size: 0.9rem; }
+.bk-review blockquote {
+  font-family: var(--bk-serif);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--bk-ink);
+  margin: 0 0 20px;
+}
+.bk-review-who { margin-top: auto; display: flex; align-items: center; gap: 12px; font-size: 0.85rem; }
+.bk-review-who .bk-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bk-forest);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.bk-review-who strong { color: var(--bk-ink); font-weight: 500; display: block; }
+
+.bk-path {
+  background: var(--bk-card);
+  border-radius: 10px;
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bk-path-head { display: flex; gap: 18px; margin-bottom: 18px; }
+.bk-path-head i { font-size: 2.2rem; color: var(--bk-forest); flex: 0 0 44px; text-align: center; }
+.bk-path h3 { font-family: var(--bk-sans); font-size: 1.05rem; font-weight: 500; margin-bottom: 6px; }
+.bk-path .bk-btn { margin-top: auto; }
+
+/* ==========================================================================
+   BIOKINETICS PAGE
+   ========================================================================== */
+.bk-help-card {
+  background: var(--bk-card);
+  border-radius: 8px;
+  padding: 22px;
+  height: 100%;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+a.bk-help-card:hover { box-shadow: 0 14px 30px -18px rgba(31, 36, 28, 0.45); transform: translateY(-2px); color: inherit; }
+.bk-ring-icon {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(31, 36, 28, 0.3);
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  color: var(--bk-ink);
+}
+.bk-help-card h3 { font-family: var(--bk-sans); font-size: 1rem; font-weight: 500; margin-bottom: 6px; }
+.bk-help-card p { font-size: 0.84rem; line-height: 1.6; margin: 0; }
+.bk-disclaimer { display: flex; gap: 10px; justify-content: center; align-items: flex-start; font-size: 0.76rem; color: var(--bk-text); margin-top: 24px; }
+
+.bk-journey { text-align: center; }
+.bk-journey-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 18px;
+}
+.bk-journey-photo img { width: 100%; height: 100%; object-fit: cover; }
+.bk-journey-title { display: inline-flex; align-items: center; gap: 10px; text-align: left; margin-bottom: 10px; }
+.bk-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bk-forest);
+  color: #fff;
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 30px;
+}
+.bk-journey .bk-small { max-width: 220px; margin: 0 auto; }
+
+.bk-benefits { text-align: center; }
+.bk-benefit { padding: 8px 10px; }
+.bk-benefit i { font-size: 2rem; color: var(--bk-forest); margin-bottom: 12px; display: block; }
+@media (min-width: 768px) {
+  .bk-benefits > div + div .bk-benefit { border-left: 1px solid var(--bk-line); }
+}
+
+.bk-aid-card {
+  background: #fff;
+  border: 1px solid var(--bk-line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  height: 100%;
+}
+.bk-aid-card i { color: var(--bk-forest); font-size: 1.3rem; margin-top: 3px; }
+.bk-aid-card strong { color: var(--bk-ink); font-weight: 600; display: block; }
+.bk-aid-card ul { margin: 6px 0 0; padding-left: 18px; font-size: 0.85rem; }
+.bk-session {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bk-cream);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.bk-session strong { color: var(--bk-ink); font-weight: 500; display: block; }
+.bk-pill {
+  background: var(--bk-forest);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+
+.bk-cta-band {
+  background: var(--bk-cream);
+  padding: 44px 0;
+  position: relative;
+  overflow: hidden;
+}
+.bk-cta-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--bk-sage);
+  color: #fff;
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.bk-cta-band h2 { font-family: var(--bk-serif); font-weight: 500; font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 6px; }
+
+/* ==========================================================================
+   WELLNESS PAGE
+   ========================================================================== */
+.bk-page-wellness .bk-eyebrow,
+.bk-page-wellness .bk-hero-tagline { color: var(--bk-olive-dark); }
+.bk-program {
+  background: var(--bk-card);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bk-program-img { height: 200px; overflow: hidden; }
+.bk-program-img img { width: 100%; height: 100%; object-fit: cover; }
+.bk-program-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.bk-program-body h3 { font-family: var(--bk-sans); font-size: 1.1rem; font-weight: 500; margin-bottom: 4px; }
+.bk-program-body .bk-who { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bk-olive-dark); margin-bottom: 12px; }
+.bk-program-body ul { padding-left: 18px; font-size: 0.86rem; margin-bottom: 18px; }
+.bk-program-body .bk-link-caps { margin-top: auto; color: var(--bk-olive-dark); }
+.bk-page-wellness .bk-soft-icon { color: var(--bk-olive-dark); }
+.bk-page-wellness .bk-num { background: var(--bk-olive); }
+
+/* ==========================================================================
+   LEGAL PAGE
+   ========================================================================== */
+.bk-legal h2 { font-family: var(--bk-serif); font-weight: 500; font-size: 2rem; margin: 48px 0 12px; scroll-margin-top: 110px; }
+.bk-legal h2:first-of-type { margin-top: 0; }
+.bk-legal p, .bk-legal li { line-height: 1.75; }
+.bk-legal .bk-todo { background: #fff6d6; padding: 0 4px; border-radius: 3px; }
+
+/* Wide gutters overflow small screens; tighten them below desktop. */
+@media (max-width: 991.98px) {
+  .row.g-5, .row.gx-5 { --bs-gutter-x: 1.5rem; }
+}

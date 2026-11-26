@@ -29,7 +29,7 @@
     "image": "https://boikanya.com/img/Chronic.JPG",
     "author": {
       "@type": "Organization",
-      "name": "Boikanya Biokinetics Clinical Team"
+      "name": "Boikanya Biokinetics Team"
     },
     "publisher": {
       "@type": "MedicalBusiness",
@@ -60,52 +60,77 @@
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/brand.css" rel="stylesheet">
-</head>
+    <!-- site-head:start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="../css/site.css" rel="stylesheet">
+        <script src="../js/site-config.js"></script>
+        <script src="../js/site.js" defer></script>
+        <!-- site-head:end -->
+    </head>
 
-<body>
+<body data-nav="resources">
   <!-- Topbar -->
-  <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-    <div class="row gx-0 align-items-center" style="height: 45px;">
-      <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-        <div class="d-flex flex-wrap">
-          <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Eco-Park Virgin Active, Centurion</a>
-          <a href="tel:+27671728818" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>(+27) 067 172 8818</a>
-          <a href="mailto:admin@boikanya.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>admin@boikanya.com</a>
-        </div>
-      </div>
-      <div class="col-lg-4 text-center text-lg-end">
-        <div class="d-flex align-items-center justify-content-end">
-          <a href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/thegratefulbio?utm_source=qr&igsh=MWxrOG0wN3dhaGFzNA==" target="_blank" rel="noopener" class="btn btn-primary btn-square border rounded-circle nav-fill me-3 text-white" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/duduetsangkeokame?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="btn btn-primary btn-square border rounded-circle nav-fill me-0 text-white" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <div class="container-fluid position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-      <a href="../index.html" class="navbar-brand p-0">
-        <img src="../img/Logo.png" alt="Boikanya Biokinetics Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto py-0">
-          <a href="../index.html" class="nav-item nav-link">Home</a>
-          <a href="../about.html" class="nav-item nav-link">About</a>
-          <a href="../service.html" class="nav-item nav-link">Services</a>
-          <a href="../testimonial.html" class="nav-item nav-link">Testimonial</a>
-          <a href="../faq.html" class="nav-item nav-link">FAQ</a>
-          <a href="../blog.html" class="nav-item nav-link active">Blog</a>
-          <a href="../contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a href="../appointment.html" class="btn btn-primary rounded-pill text-white py-2 px-4">Book Appointment</a>
-      </div>
-    </nav>
-  </div>
+  <!-- site-header:start -->
+        <header class="site-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+                    <a class="bk-brand" href="../index.html" aria-label="Boikanya Biokinetics and Wellness, home">
+                        <span class="bk-brand-mark" aria-hidden="true">B</span>
+                        <span class="bk-brand-text"><span class="bk-brand-name">BOIKANYA</span><span class="bk-brand-sub">Biokinetics | Wellness</span></span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="siteNav">
+                        <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../biokinetics.html">Biokinetics</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../biokinetics.html#what">What is Biokinetics?</a></li>
+                                <li><a class="dropdown-item" href="../services/orthopaedic-rehabilitation.html">Orthopaedic rehabilitation</a></li>
+                                <li><a class="dropdown-item" href="../services/neurological-rehabilitation.html">Neurological rehabilitation</a></li>
+                                <li><a class="dropdown-item" href="../services/management-of-chronic-conditions.html">Chronic conditions</a></li>
+                                <li><a class="dropdown-item" href="../services/pre-post-natal-care.html">Pre &amp; post natal care</a></li>
+                                <li><a class="dropdown-item" href="../services/fitness-assessment.html">Fitness assessment</a></li>
+                                <li><a class="dropdown-item" href="../biokinetics.html#medical-aid">Medical aid</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../wellness.html">Wellness</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../wellness.html#workplaces">Workplaces</a></li>
+                                <li><a class="dropdown-item" href="../wellness.html#communities">Communities</a></li>
+                                <li><a class="dropdown-item" href="../wellness.html#groups">Groups</a></li>
+                                <li><a class="dropdown-item" href="../wellness.html#youth">Youth</a></li>
+                                <li><a class="dropdown-item" href="../wellness.html#events">Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="../blog.html" aria-current="page">Resources</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../blog.html" data-blog-link="1">Blog</a></li>
+                                <li><a class="dropdown-item" href="../faq.html">FAQ &amp; medical aid</a></li>
+                                <li><a class="dropdown-item" href="../testimonial.html">Client stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+                        </ul>
+                        <div class="bk-header-actions d-flex align-items-center gap-2">
+                            <div class="bk-header-social d-flex d-lg-none d-xl-flex">
+                                <a href="https://www.instagram.com/thegratefulbio" target="_blank" rel="noopener" aria-label="Boikanya on Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@boikanyamovement" target="_blank" rel="noopener" aria-label="Boikanya on TikTok"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                            <a class="bk-btn bk-btn-primary bk-header-cta" href="../appointment.html">Book a consultation</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- site-header:end -->
 
   <!-- Header Breadcrumb -->
   <div class="container-fluid bg-breadcrumb">
@@ -161,7 +186,7 @@
             <div class="article-callout">
               <h4 class="h5 mb-2 text-dark"><i class="fas fa-stethoscope text-primary me-2"></i>The Biokinetics Advantage</h4>
               <p class="mb-0">
-                Unlike unmonitored gym workouts, a biokineticist conducts pre-exercise clinical screenings (blood pressure, resting ECG review, medications risk profiles, joint limitations) to construct safe, non-threatening exercise thresholds.
+                Unlike unmonitored gym workouts, a biokineticist conducts pre-exercise screenings (blood pressure, resting ECG review, medications risk profiles, joint limitations) to construct safe, non-threatening exercise thresholds.
               </p>
             </div>
 
@@ -189,12 +214,12 @@
 
             <h2>Medical Aid Recognition in South Africa</h2>
             <p>
-              Biokinetics services for prescribed chronic condition management are recognized by major South African medical aids (Discovery Health, Medscheme, Bonitas, Momentum, Fedhealth) and can often be claimed from specialized chronic care or medical savings accounts.
+              Biokinetics services for prescribed chronic condition management are recognized by major South African medical aids (Discovery Health, Medscheme, Bonitas, Momentum, Fedhealth) and can often be claimed from day-to-day benefits or medical savings, depending on your plan.
             </p>
 
             <div class="p-4 bg-light rounded mt-5 border text-center">
               <h3 class="h4 text-dark mb-3">Take Control of Your Health Today</h3>
-              <p class="mb-4">Schedule a baseline clinical assessment with our biokinetics team at Eco-Park Virgin Active Centurion.</p>
+              <p class="mb-4">Schedule a baseline assessment with our biokinetics team at Eco-Park Virgin Active Centurion.</p>
               <div class="d-flex flex-wrap justify-content-center gap-3">
                 <a href="../appointment.html" class="btn btn-primary rounded-pill px-4 py-2 text-white">Book Your Assessment</a>
                 <a href="../services/management-of-chronic-conditions.html" class="btn btn-outline-primary rounded-pill px-4 py-2">Chronic Conditions Service</a>
@@ -214,56 +239,80 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-md-6 col-lg-6 col-xl-3">
-          <div class="footer-item d-flex flex-column">
-            <h4 class="text-white mb-4">Boikanya Biokinetics</h4>
-            <p>Evidence-based exercise therapy, orthopaedic rehabilitation, and chronic disease management in Centurion, Gauteng.</p>
-            <div class="d-flex align-items-center">
-              <a class="btn-square btn btn-primary rounded-circle me-2" href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn-square btn btn-primary rounded-circle me-2" href="https://www.instagram.com/thegratefulbio?utm_source=qr&igsh=MWxrOG0wN3dhaGFzNA==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a class="btn-square btn btn-primary rounded-circle me-2" href="https://www.linkedin.com/in/duduetsangkeokame?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+  <!-- site-footer:start -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row g-4 g-lg-5">
+                    <div class="col-lg-4">
+                        <a class="bk-brand mb-3" href="../index.html" aria-label="Boikanya Biokinetics and Wellness, home">
+                            <span class="bk-brand-mark" aria-hidden="true">B</span>
+                            <span class="bk-brand-text"><span class="bk-brand-name">BOIKANYA</span><span class="bk-brand-sub">Biokinetics | Wellness</span></span>
+                        </a>
+                        <p class="mb-0">Movement for Better Health.</p>
+                        <div class="bk-footer-sides">
+                            <div><strong>Boikanya Biokinetics</strong>Professional Biokinetics services.</div>
+                            <div><strong>Boikanya Wellness</strong>Movement programmes for individuals, workplaces &amp; communities.</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../biokinetics.html">Biokinetics</a></li>
+                            <li><a href="../wellness.html">Wellness</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a href="../blog.html" data-blog-link="1">Resources</a></li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h5>Contact</h5>
+                        <ul class="bk-footer-contact">
+                            <li><i class="fas fa-phone-alt"></i><a href="tel:+27671728818">067 172 8818</a></li>
+                            <li><i class="far fa-envelope"></i><a href="mailto:admin@boikanya.com">admin@boikanya.com</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i><span>Eco-Park Virgin Active, Centurion, Gauteng</span></li>
+                        </ul>
+                        <div class="bk-footer-social">
+                            <a href="https://www.instagram.com/thegratefulbio" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@boikanyamovement" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/share/1HrLLc6GAB/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/duduetsangkeokame" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 bk-footer-legal">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="../legal.html#privacy">Privacy Policy</a></li>
+                            <li><a href="../legal.html#popia">POPIA Privacy Notice</a></li>
+                            <li><a href="../legal.html#terms">Terms &amp; Conditions</a></li>
+                            <li><a href="../legal.html#cancellation">Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Email list signup (Kit). Hidden until a Kit form ID is set in js/site-config.js -->
+                <div class="bk-newsletter" data-kit-signup hidden>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-lg-5">
+                            <h5 class="mb-1">Movement notes, straight to your inbox</h5>
+                            <p class="mb-0 small">Practical tips, programme news and new articles from the blog.</p>
+                        </div>
+                        <div class="col-lg-7">
+                            <form class="d-flex flex-wrap gap-2" method="post" target="_blank" data-kit-form>
+                                <label class="visually-hidden" for="kitEmail">Email address</label>
+                                <input type="email" id="kitEmail" name="email_address" placeholder="Your email address" required>
+                                <button type="submit" class="bk-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="bk-footer-bottom">
+                    <p>Boikanya Biokinetics services are provided within the applicable professional scope and regulatory requirements.</p>
+                    <p>Individual responses to exercise vary and no specific outcome or result is guaranteed.</p>
+                    <p>&copy; <span data-year>2026</span> Boikanya Biokinetics &amp; Wellness. Registered with the HPCSA and BASA.</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-3">
-          <div class="footer-item d-flex flex-column">
-            <h4 class="mb-4 text-white">Quick Links</h4>
-            <a href="../index.html"><i class="fas fa-angle-right me-2"></i>Home</a>
-            <a href="../about.html"><i class="fas fa-angle-right me-2"></i>About Us</a>
-            <a href="../service.html"><i class="fas fa-angle-right me-2"></i>Our Services</a>
-            <a href="../testimonial.html"><i class="fas fa-angle-right me-2"></i>Testimonials</a>
-            <a href="../faq.html"><i class="fas fa-angle-right me-2"></i>FAQ</a>
-            <a href="../blog.html"><i class="fas fa-angle-right me-2"></i>Clinical Blog</a>
-            <a href="../contact.html"><i class="fas fa-angle-right me-2"></i>Contact</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-3">
-          <div class="footer-item d-flex flex-column">
-            <h4 class="mb-4 text-white">Services</h4>
-            <a href="../services/orthopaedic-rehabilitation.html"><i class="fas fa-angle-right me-2"></i>Orthopaedic Rehab</a>
-            <a href="../services/neurological-rehabilitation.html"><i class="fas fa-angle-right me-2"></i>Neurological Rehab</a>
-            <a href="../services/management-of-chronic-conditions.html"><i class="fas fa-angle-right me-2"></i>Chronic Conditions</a>
-            <a href="../services/pre-post-natal-care.html"><i class="fas fa-angle-right me-2"></i>Pre & Post-Natal</a>
-            <a href="../services/fitness-assessment.html"><i class="fas fa-angle-right me-2"></i>Fitness Assessment</a>
-            <a href="../services/sports-massage.html"><i class="fas fa-angle-right me-2"></i>Sports Massage</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 col-xl-3">
-          <div class="footer-item d-flex flex-column">
-            <h4 class="mb-4 text-white">Contact Info</h4>
-            <a href="https://maps.google.com/?q=Eco-Park+Virgin+Active,+270+Witch-Hazel+Avenue,+Centurion,+Gauteng,+0157" target="_blank" rel="noopener"><i class="fa fa-map-marker-alt me-2"></i>Eco-Park Virgin Active, Centurion</a>
-            <a href="mailto:admin@boikanya.com"><i class="fas fa-envelope me-2"></i>admin@boikanya.com</a>
-            <a href="tel:+27671728818"><i class="fas fa-phone me-2"></i>(+27) 067 172 8818</a>
-            <p class="mt-2 mb-0"><i class="fas fa-clock me-2"></i>Mon - Sat: By Appointment</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </footer>
+        <!-- site-footer:end -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
