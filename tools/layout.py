@@ -16,7 +16,7 @@ import re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 SOCIAL = {
-    "instagram": "https://www.instagram.com/thegratefulbio",
+    "instagram": "https://www.instagram.com/boikanyamovement",
     "tiktok": "https://www.tiktok.com/@boikanyamovement",
     "facebook": "https://www.facebook.com/share/1HrLLc6GAB/",
     "linkedin": "https://www.linkedin.com/in/duduetsangkeokame",
