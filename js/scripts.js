@@ -84,6 +84,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      const consentField = this.querySelector('input[name="consent"]');
+      if (consentField && !consentField.checked) {
+        showMessage('Please tick the consent box so we can contact you.', false);
+        consentField.focus();
+        return;
+      }
+
       const serviceVal = serviceField ? (serviceField.options[serviceField.selectedIndex]?.text || serviceField.value) : 'Biokinetics Consultation';
       const notesVal = notesField?.value.trim() || 'No additional notes.';
 
@@ -120,6 +127,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // 5. Contact Form Handler
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
+    // Prefill the message when a page links here with ?topic=..., e.g. from the Wellness programmes
+    const topic = new URLSearchParams(window.location.search).get('topic');
+    const topicBox = document.getElementById('contactMessage');
+    if (topic && topicBox && !topicBox.value) {
+      topicBox.value = 'Enquiry: ' + topic.slice(0, 80) + '\n\n';
+    }
+
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -149,6 +163,13 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!messageInput || !messageInput.value.trim()) {
         showMessage('Please write your message.', false);
         messageInput?.focus();
+        return;
+      }
+
+      const contactConsent = contactForm.querySelector('input[name="consent"]');
+      if (contactConsent && !contactConsent.checked) {
+        showMessage('Please tick the consent box so we can contact you.', false);
+        contactConsent.focus();
         return;
       }
 

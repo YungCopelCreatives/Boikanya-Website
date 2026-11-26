@@ -1,0 +1,9 @@
+# Not part of the public site
+.vscode
+scss
+tools
+lib/waypoints/links.php
+READ-ME.txt
+LICENSE.txt
+.env.example
+metadata.json
