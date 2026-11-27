@@ -731,3 +731,257 @@ a:focus-visible, button:focus-visible, .bk-btn:focus-visible, input:focus-visibl
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .bk-anim .bk-reveal { opacity: 1; transform: none; }
 }
+
+/* ==========================================================================
+   OLDER PAGES — bring the original template pages into the new design.
+   Scoped to pages without .bk-page so the new pages are untouched.
+   ========================================================================== */
+body:not(.bk-page) {
+  font-family: var(--bk-sans) !important;
+  color: var(--bk-text);
+  background: #fff !important;
+}
+body:not(.bk-page) h1, body:not(.bk-page) h2, body:not(.bk-page) h3,
+body:not(.bk-page) .h1, body:not(.bk-page) .h2, body:not(.bk-page) .h3,
+body:not(.bk-page) .display-3, body:not(.bk-page) .display-4,
+body:not(.bk-page) .display-5, body:not(.bk-page) .display-6 {
+  font-family: var(--bk-serif) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--bk-ink);
+  line-height: 1.12;
+}
+body:not(.bk-page) h4, body:not(.bk-page) h5, body:not(.bk-page) h6,
+body:not(.bk-page) .h4, body:not(.bk-page) .h5 {
+  font-family: var(--bk-sans) !important;
+  font-weight: 500 !important;
+  color: var(--bk-ink);
+  letter-spacing: 0 !important;
+}
+body:not(.bk-page) .display-5 { font-size: clamp(2rem, 3.6vw, 2.8rem) !important; }
+body:not(.bk-page) .display-6 { font-size: clamp(1.8rem, 3vw, 2.4rem) !important; }
+body:not(.bk-page) p, body:not(.bk-page) li { font-family: var(--bk-sans); }
+body:not(.bk-page) .text-primary { color: var(--bk-forest) !important; }
+body:not(.bk-page) .bg-primary { background-color: var(--bk-forest) !important; }
+body:not(.bk-page) .bg-light { background-color: var(--bk-cream) !important; }
+body:not(.bk-page) a:not(.bk-btn):not(.nav-link):not(.dropdown-item):not(.bk-brand):not(.btn) { color: var(--bk-forest); }
+body:not(.bk-page) .bg-primary.bg-opacity-10 { background-color: var(--bk-cream) !important; }
+/* keep the shared footer readable on older pages */
+body:not(.bk-page) .site-footer a { color: rgba(255, 255, 255, 0.82) !important; }
+body:not(.bk-page) .site-footer a:hover { color: #fff !important; }
+body:not(.bk-page) .site-footer h5, body:not(.bk-page) .site-footer h6 { color: #fff !important; font-family: var(--bk-sans) !important; font-size: 0.75rem !important; letter-spacing: 0.14em !important; }
+
+/* Page banners: cream band with an eyebrow, serif title and quiet breadcrumb */
+body:not(.bk-page) .page-header-luxury,
+body:not(.bk-page) .bg-breadcrumb {
+  background: var(--bk-cream) !important;
+  background-image: none !important;
+  padding: 64px 0 48px !important;
+  border-bottom: 1px solid var(--bk-line);
+  text-align: center;
+}
+body:not(.bk-page) .page-header-luxury h1,
+body:not(.bk-page) .bg-breadcrumb h1,
+body:not(.bk-page) .bg-breadcrumb h3 {
+  color: var(--bk-ink) !important;
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem) !important;
+  margin-bottom: 12px !important;
+}
+body:not(.bk-page) .page-header-luxury p,
+body:not(.bk-page) .bg-breadcrumb p { color: var(--bk-text) !important; }
+body:not(.bk-page) .page-header-luxury .breadcrumb,
+body:not(.bk-page) .bg-breadcrumb .breadcrumb { justify-content: center; font-size: 0.85rem; }
+body:not(.bk-page) .page-header-luxury .breadcrumb-item a,
+body:not(.bk-page) .bg-breadcrumb .breadcrumb-item a { color: var(--bk-forest) !important; }
+body:not(.bk-page) .page-header-luxury .breadcrumb-item.active,
+body:not(.bk-page) .bg-breadcrumb .breadcrumb-item.active { color: var(--bk-text) !important; }
+body:not(.bk-page) .breadcrumb-item + .breadcrumb-item::before { color: rgba(31, 36, 28, 0.35) !important; }
+
+/* Pill badges become small eyebrow labels */
+body:not(.bk-page) .badge-pill-sand,
+body:not(.bk-page) .badge-pill-brand,
+body:not(.bk-page) .badge-pill-dark,
+body:not(.bk-page) .blog-badge {
+  display: inline-block;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-family: var(--bk-sans) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: var(--bk-forest) !important;
+  box-shadow: none !important;
+}
+body:not(.bk-page) .bento-card-dark .badge-pill-dark,
+body:not(.bk-page) .bento-card-dark .badge-pill-sand { color: rgba(255, 255, 255, 0.75) !important; }
+
+/* Buttons */
+body:not(.bk-page) .btn-luxury-primary,
+body:not(.bk-page) .btn-luxury-secondary,
+body:not(.bk-page) .btn.btn-primary,
+body:not(.bk-page) .btn.btn-light,
+body:not(.bk-page) .btn.btn-outline-primary {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 24px !important;
+  border-radius: 6px !important;
+  font-family: var(--bk-sans) !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+  transform: none;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+body:not(.bk-page) .btn-luxury-primary,
+body:not(.bk-page) .btn.btn-primary {
+  background: var(--bk-forest) !important;
+  border: 1px solid var(--bk-forest) !important;
+  color: #fff !important;
+}
+body:not(.bk-page) .btn-luxury-primary:hover,
+body:not(.bk-page) .btn.btn-primary:hover { background: var(--bk-forest-dark) !important; color: #fff !important; }
+body:not(.bk-page) .btn-luxury-primary span,
+body:not(.bk-page) .btn-luxury-primary i { color: #fff !important; }
+body:not(.bk-page) .btn-luxury-secondary,
+body:not(.bk-page) .btn.btn-light,
+body:not(.bk-page) .btn.btn-outline-primary {
+  background: #fff !important;
+  border: 1px solid rgba(31, 36, 28, 0.35) !important;
+  color: var(--bk-ink) !important;
+}
+body:not(.bk-page) .btn-luxury-secondary:hover,
+body:not(.bk-page) .btn.btn-light:hover { border-color: var(--bk-forest) !important; color: var(--bk-forest) !important; }
+
+/* Cards: flat cream, no shadows */
+body:not(.bk-page) .bento-card,
+body:not(.bk-page) .feature-item,
+body:not(.bk-page) .luxury-form-card,
+body:not(.bk-page) .rounded-card-luxury,
+body:not(.bk-page) .hero-visual-card,
+body:not(.bk-page) .bookem-luxury-box,
+body:not(.bk-page) .accordion-item,
+body:not(.bk-page) .rounded-4.shadow-sm,
+body:not(.bk-page) .rounded.shadow-sm {
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+body:not(.bk-page) .bento-card,
+body:not(.bk-page) .feature-item {
+  background: var(--bk-card) !important;
+  border: 0 !important;
+}
+body:not(.bk-page) .bento-card:hover,
+body:not(.bk-page) .feature-item:hover { box-shadow: 0 14px 30px -18px rgba(31, 36, 28, 0.45) !important; }
+body:not(.bk-page) .bento-card-dark {
+  background: var(--bk-forest) !important;
+  background-image: none !important;
+}
+body:not(.bk-page) .bento-card-dark h3,
+body:not(.bk-page) .bento-card-dark h4,
+body:not(.bk-page) .bento-card-dark p,
+body:not(.bk-page) .bento-card-dark div { color: #fff !important; }
+body:not(.bk-page) .bento-card-dark a { color: #fff !important; }
+body:not(.bk-page) .bento-icon-box,
+body:not(.bk-page) .vm-icon-bubble,
+body:not(.bk-page) .feature-icon {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  color: var(--bk-forest) !important;
+  box-shadow: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem !important;
+}
+body:not(.bk-page) .bento-icon-box i,
+body:not(.bk-page) .feature-icon i { color: var(--bk-forest) !important; font-size: 1.3rem !important; }
+body:not(.bk-page) .bento-img-header,
+body:not(.bk-page) .bento-img-header img { border-radius: 8px !important; }
+body:not(.bk-page) .luxury-form-card,
+body:not(.bk-page) .bookem-luxury-box,
+body:not(.bk-page) .rounded-4.shadow-sm,
+body:not(.bk-page) .rounded.shadow-sm,
+body:not(.bk-page) .accordion-item {
+  background: #fff !important;
+  border: 1px solid var(--bk-line) !important;
+}
+body:not(.bk-page) .pattern-kinetic-dark,
+body:not(.bk-page) .pattern-kinetic { background-image: none !important; }
+body:not(.bk-page) section[style*="FAF7F2"],
+body:not(.bk-page) section[style*="faf7f2"] { background-color: var(--bk-cream) !important; }
+body:not(.bk-page) .img-luxury-rounded,
+body:not(.bk-page) img.rounded { border-radius: 10px !important; }
+
+/* Forms */
+body:not(.bk-page) .form-control,
+body:not(.bk-page) .form-select {
+  border-radius: 6px !important;
+  border: 1px solid rgba(31, 36, 28, 0.2) !important;
+  box-shadow: none !important;
+  font-family: var(--bk-sans);
+  background-color: #fff !important;
+}
+body:not(.bk-page) .form-control:focus,
+body:not(.bk-page) .form-select:focus { border-color: var(--bk-forest) !important; }
+body:not(.bk-page) .form-check-input:checked { background-color: var(--bk-forest); border-color: var(--bk-forest); }
+
+/* FAQ accordion */
+body:not(.bk-page) .accordion-button {
+  font-family: var(--bk-sans) !important;
+  font-weight: 500 !important;
+  color: var(--bk-ink) !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+body:not(.bk-page) .accordion-button:not(.collapsed) { color: var(--bk-forest) !important; background: var(--bk-cream) !important; }
+
+/* Comparison table */
+body:not(.bk-page) .compare-table-luxury th { font-family: var(--bk-sans) !important; font-weight: 500 !important; }
+body:not(.bk-page) .compare-table-luxury .highlight-col { background: var(--bk-cream) !important; }
+
+/* Blog articles */
+body:not(.bk-page) .article-content h2 { font-size: 1.9rem; margin-top: 2rem; }
+body:not(.bk-page) .article-content h3 { font-size: 1.45rem; margin-top: 1.5rem; }
+body:not(.bk-page) .article-content p,
+body:not(.bk-page) .article-content li { line-height: 1.8; }
+body:not(.bk-page) .article-callout {
+  background: var(--bk-cream) !important;
+  border: 0 !important;
+  border-left: 3px solid var(--bk-forest) !important;
+  border-radius: 6px !important;
+}
+
+/* Old back-to-top button */
+body:not(.bk-page) .back-to-top { border-radius: 50% !important; background: var(--bk-forest) !important; border: 0 !important; }
+
+/* Template section labels: plain eyebrow, no decorative side lines (they overflowed on phones) */
+body:not(.bk-page) .sub-style { max-width: 100%; }
+body:not(.bk-page) .sub-title {
+  font-family: var(--bk-sans) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase;
+  color: var(--bk-forest) !important;
+  padding: 0 !important;
+}
+body:not(.bk-page) .sub-title::before,
+body:not(.bk-page) .sub-title::after { display: none !important; }
+body:not(.bk-page) .sub-style::before,
+body:not(.bk-page) .sub-style::after { display: none !important; }
+body:not(.bk-page) .bento-card-dark .btn-luxury-secondary,
+body:not(.bk-page) .bento-card-dark .btn-luxury-secondary span,
+body:not(.bk-page) .bento-card-dark .btn-luxury-secondary i { color: var(--bk-ink) !important; }
+body:not(.bk-page) .bento-card-dark .bg-light.text-dark { color: var(--bk-ink) !important; }
+body:not(.bk-page) .bento-card-dark .text-primary,
+body:not(.bk-page) .bento-card-dark .text-white-50 { color: rgba(255, 255, 255, 0.78) !important; }

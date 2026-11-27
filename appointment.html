@@ -122,123 +122,45 @@
             </div>
         </div>
 
-        <!-- Appointment Main Booking Suite -->
+        <!-- Booking: calendar first, WhatsApp as the one alternative -->
         <section class="py-5">
             <div class="container py-4">
                 <div class="row g-5">
-                    
-                    <!-- Left: Live Bookem Widget -->
-                    <div class="col-lg-7">
+
+                    <div class="col-lg-7" id="bookem-booking">
                         <div class="bookem-luxury-box">
-                            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom">
-                                <div>
-                                    <h2 class="h5 text-dark fw-bold mb-0"><i class="fas fa-calendar-alt text-primary me-2"></i>Live Practice Calendar</h2>
-                                    <span class="small text-muted">Select an available time slot</span>
-                                </div>
-                                <span class="badge bg-success text-white rounded-pill px-3 py-1">Live Sync</span>
+                            <div class="mb-3 pb-2 border-bottom">
+                                <h2 class="h4 mb-1">Choose a time that suits you</h2>
+                                <span class="small text-muted">Pick an open slot below and you will get a confirmation straight away.</span>
                             </div>
-                            
                             <script src="https://embed.bookem.com/embed.js"></script>
                             <bookem-widget business-id="b6e8eb2405854e2cb6191185a17e1c75"></bookem-widget>
+                            <noscript><p class="small text-muted mt-3">The calendar needs JavaScript. You can book on WhatsApp instead.</p></noscript>
                         </div>
                     </div>
 
-                    <!-- Right: Priority Intake Form & Checklist -->
                     <div class="col-lg-5">
-                        
-                        <!-- Consultation Request Form -->
-                        <div class="luxury-form-card mb-4">
-                            <h3 class="h4 text-dark mb-2">Priority Request Form</h3>
-                            <p class="text-muted small mb-4">Prefer manual assistance or have specific questions? Submit your request below.</p>
-                            
-                            <form action="#" method="post" id="appointmentForm" novalidate>
-                                <div id="appointmentFeedback" class="form-feedback-alert"></div>
-                                
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="app_name" name="name" placeholder="Full Name" autocomplete="name" required>
-                                    <label for="app_name">Full Name</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="app_email" name="email" placeholder="Email Address" autocomplete="email" required>
-                                    <label for="app_email">Email Address</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="tel" class="form-control" id="app_phone" name="phone" placeholder="Phone Number" autocomplete="tel" required>
-                                    <label for="app_phone">Phone / WhatsApp Number</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <select class="form-select" id="app_service" name="service" required>
-                                        <option value="" selected disabled>Select Consultation Type</option>
-                                        <option value="Initial Biokinetics Assessment (60 min)">Initial Biokinetics Assessment (60 min)</option>
-                                        <option value="Orthopaedic Rehabilitation">Orthopaedic & Joint Rehabilitation</option>
-                                        <option value="Neurological Rehabilitation">Neurological Rehabilitation</option>
-                                        <option value="Chronic Condition Exercise Therapy">Chronic Condition Exercise Therapy</option>
-                                        <option value="Pre/Post Natal Consultation">Pre & Post Natal Consultation</option>
-                                        <option value="Discovery Vitality Assessment">Discovery Vitality Fitness Assessment</option>
-                                        <option value="Sports Massage Therapy">Sports & Recovery Massage</option>
-                                        <option value="Wellness programme (workplace, group, community or event)">Wellness programme (workplace, group, community or event)</option>
-                                    </select>
-                                    <label for="app_service">Service Type</label>
-                                </div>
-
-                                <div class="form-floating mb-4">
-                                    <textarea class="form-control" placeholder="Symptoms or history" id="app_notes" name="notes"></textarea>
-                                    <label for="app_notes">Injury history, diagnosis or goals</label>
-                                </div>
-
-                                <div class="form-check mb-4 small">
-                                    <input class="form-check-input" type="checkbox" id="app_consent" name="consent" required>
-                                    <label class="form-check-label text-muted" for="app_consent">I consent to Boikanya using these details, including any health information, to contact me about my care. See the <a href="legal.html#popia">POPIA notice</a>.</label>
-                                </div>
-
-                                <button type="submit" class="btn-luxury-primary w-100 py-3">
-                                    <span>Submit Appointment Request</span>
-                                    <i class="fas fa-paper-plane ms-2"></i>
-                                </button>
-                            </form>
+                        <div class="bento-card-dark p-4 p-md-5 rounded-4 mb-4">
+                            <span class="badge-pill-dark mb-3">Rather message us?</span>
+                            <h3 class="h3 mb-3">Book on WhatsApp</h3>
+                            <p class="mb-4">Our Care Coordinator can find you a time, check your medical aid benefits and answer questions before your first session.</p>
+                            <a href="https://wa.me/27671728818?text=Hello%20Boikanya%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" class="btn-luxury-secondary">
+                                <i class="fab fa-whatsapp me-1" aria-hidden="true"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
                         </div>
 
-                        <!-- What to Bring Checklist -->
                         <div class="p-4 bg-white rounded-4 border shadow-sm">
-                            <h4 class="h5 text-dark mb-3"><i class="fas fa-clipboard-check text-primary me-2"></i>What to Bring to Your First Session</h4>
+                            <h3 class="h5 mb-3">What to bring to your first session</h3>
                             <ul class="list-unstyled mb-0 small text-muted">
-                                <li class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i> Comfortable athletic/gym wear and sneakers.
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i> Medical aid card and main member details.
-                                </li>
-                                <li class="d-flex align-items-center mb-2">
-                                    <i class="fas fa-check text-primary me-2"></i> Any relevant doctor referrals, MRI, or X-ray reports.
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <i class="fas fa-check text-primary me-2"></i> List of current chronic medications (if applicable).
-                                </li>
+                                <li class="d-flex align-items-start mb-2"><i class="fas fa-check text-primary me-2 mt-1" aria-hidden="true"></i> Comfortable gym wear and trainers.</li>
+                                <li class="d-flex align-items-start mb-2"><i class="fas fa-check text-primary me-2 mt-1" aria-hidden="true"></i> Your medical aid card and main member details.</li>
+                                <li class="d-flex align-items-start mb-2"><i class="fas fa-check text-primary me-2 mt-1" aria-hidden="true"></i> Any doctor referrals, MRI or X-ray reports.</li>
+                                <li class="d-flex align-items-start"><i class="fas fa-check text-primary me-2 mt-1" aria-hidden="true"></i> A list of medication you take, if any.</li>
                             </ul>
                         </div>
-
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Direct WhatsApp Callout -->
-        <section class="py-5" style="background-color: #FAF7F2;">
-            <div class="container py-4 text-center">
-                <div class="p-4 p-md-5 bg-white rounded-4 border shadow-sm mx-auto" style="max-width: 800px;">
-                    <span class="badge-pill-sand mb-3">Instant Communication</span>
-                    <h3 class="h2 text-dark mb-3">Prefer Booking via WhatsApp?</h3>
-                    <p class="text-muted mb-4">
-                        Chat directly with our practice reception to verify your medical aid benefits, check same-day availability, or ask about our rehabilitation protocols.
-                    </p>
-                    <a href="https://wa.me/27671728818?text=Hello%20Boikanya%20Biokinetics,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20consultation." target="_blank" rel="noopener" class="btn-luxury-primary">
-                        <i class="fab fa-whatsapp fs-5 me-2"></i>
-                        <span>Chat with Practice on WhatsApp</span>
-                    </a>
                 </div>
             </div>
         </section>
